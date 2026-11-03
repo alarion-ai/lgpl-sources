@@ -9,7 +9,7 @@ WebKit, licensed under the GNU Lesser General Public License, version 2.
 | Component | Exact version | Source |
 |---|---|---|
 | Bun | v1.3.14 (tag commit `0d9b296af33f2b851fcbf4df3e9ec89751734ba4`) | https://github.com/oven-sh/bun/tree/bun-v1.3.14 |
-| WebKit / JavaScriptCore (LGPL-2) | commit `5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b` | https://github.com/oven-sh/WebKit/tree/5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b |
+| WebKit / JavaScriptCore (LGPL-2) | commit `5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b` | Alarion's copy: https://github.com/alarion-ai/WebKit/tree/alarion-opencode-1.19.0-bun-v1.3.14 (upstream: https://github.com/oven-sh/WebKit/tree/5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b) |
 
 How these were identified, from the shipped binary: it reports `Bun v1.3.14`, and its embedded
 header paths name `webkit-5488984d20e0dbfe-arm64`. Bun v1.3.14 pins that commit as
@@ -20,5 +20,7 @@ and its prebuilt WebKit for that commit is
 The scripts that build it are in the Bun repository at that tag.
 
 Alarion did not modify these components. The WebKit source is too large (~13 GB of history) to
-copy here, so this index links the exact commits in their upstream repositories; if they become
-unavailable, Alarion remains responsible for providing them — open an issue in this repository.
+copy into this repository, so Alarion keeps it in its own fork,
+[`alarion-ai/WebKit`](https://github.com/alarion-ai/WebKit), where the tag
+`alarion-opencode-1.19.0-bun-v1.3.14` pins that exact commit independently of upstream. If a link
+here stops working, open an issue in this repository.

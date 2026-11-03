@@ -16,7 +16,10 @@
       "source": "https://github.com/oven-sh/WebKit/tree/5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
       "commit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
       "prebuilt": "https://github.com/oven-sh/WebKit/releases/tag/autobuild-5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
-      "shippedFiles": ["opencode"]
+      "shippedFiles": [
+        "opencode"
+      ],
+      "mirror": "https://github.com/alarion-ai/WebKit/tree/alarion-opencode-1.19.0-bun-v1.3.14"
     }
   ]
 }
