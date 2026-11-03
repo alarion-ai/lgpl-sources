@@ -1,0 +1,22 @@
+{
+  "pack": "opencode",
+  "version": "1.19.0",
+  "packSha256": "eee184d04eafd3abca60e14c5a07ce9e9847f5aeebf17bc39eab5919a2dfeb15",
+  "packages": [
+    {
+      "name": "bun",
+      "version": "1.3.14",
+      "licence": "MIT (embeds LGPL-2 JavaScriptCore)",
+      "source": "https://github.com/oven-sh/bun/tree/bun-v1.3.14",
+      "commit": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4"
+    },
+    {
+      "name": "webkit (JavaScriptCore, WTF)",
+      "licence": "LGPL-2.0",
+      "source": "https://github.com/oven-sh/WebKit/tree/5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+      "commit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+      "prebuilt": "https://github.com/oven-sh/WebKit/releases/tag/autobuild-5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+      "shippedFiles": ["opencode"]
+    }
+  ]
+}
