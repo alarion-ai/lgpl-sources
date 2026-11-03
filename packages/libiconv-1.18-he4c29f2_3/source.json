@@ -20,6 +20,6 @@
     }
   ],
   "shippedFiles": [
-    "lib/libiconv.2.dylib"
+    "site-packages/cv2/.dylibs/libiconv.2.dylib"
   ]
 }

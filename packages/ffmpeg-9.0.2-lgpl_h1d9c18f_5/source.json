@@ -1,0 +1,36 @@
+{
+  "name": "ffmpeg",
+  "version": "9.0.2",
+  "build": "lgpl_h1d9c18f_5",
+  "licence": "LGPL-2.1-or-later",
+  "condaPackage": {
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/ffmpeg-9.0.2-lgpl_h1d9c18f_5.conda",
+    "sha256": "940d362c7e2b194d5a9887edca11dd5075b8d46a0d2c9c0bbaaa9350c5fa0c44"
+  },
+  "feedstock": "https://github.com/conda-forge/ffmpeg-feedstock/tree/86baa8908502ede48ee12292d211ecf77b8924f0",
+  "directory": "packages/ffmpeg-9.0.2-lgpl_h1d9c18f_5",
+  "sources": [
+    {
+      "file": "source/ffmpeg-9.0.2.tar.gz",
+      "upstreamUrl": "https://ffmpeg.org/releases/ffmpeg-9.0.2.tar.gz",
+      "sha256": "84960df915059e8754fef2cd7c9afeb614062b1b5458ec471eecee619ee04e98",
+      "patches": [
+        "patches/0002-Revert-compat-Use-instead-of-for-rc.exe-options.patch",
+        "patches/0003-disable-gnu-windres.patch",
+        "patches/0004-Remove-private-requirements-to-help-downstream-compi.patch",
+        "patches/0005-Chromium-patches-for-qtwebengine.patch",
+        "patches/0006-Use-forward-lahs-on-windows.patch",
+        "patches/0007-avcodec-nvenc-fix-double-free-of-the-input-buffer.patch"
+      ]
+    }
+  ],
+  "shippedFiles": [
+    "site-packages/cv2/.dylibs/libavcodec.63.1.102.dylib",
+    "site-packages/cv2/.dylibs/libavdevice.63.1.102.dylib",
+    "site-packages/cv2/.dylibs/libavfilter.12.1.102.dylib",
+    "site-packages/cv2/.dylibs/libavformat.63.1.102.dylib",
+    "site-packages/cv2/.dylibs/libavutil.61.1.102.dylib",
+    "site-packages/cv2/.dylibs/libswresample.7.1.102.dylib",
+    "site-packages/cv2/.dylibs/libswscale.10.1.102.dylib"
+  ]
+}

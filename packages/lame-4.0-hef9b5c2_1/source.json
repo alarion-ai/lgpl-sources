@@ -24,6 +24,6 @@
     }
   ],
   "shippedFiles": [
-    "lib/libmp3lame.0.dylib"
+    "site-packages/cv2/.dylibs/libmp3lame.0.dylib"
   ]
 }

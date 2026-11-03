@@ -18,6 +18,6 @@
     }
   ],
   "shippedFiles": [
-    "lib/libgdk_pixbuf-2.0.0.dylib"
+    "site-packages/cv2/.dylibs/libgdk_pixbuf-2.0.0.dylib"
   ]
 }

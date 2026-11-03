@@ -20,6 +20,6 @@
     }
   ],
   "shippedFiles": [
-    "lib/libcairo.2.dylib"
+    "site-packages/cv2/.dylibs/libcairo.2.dylib"
   ]
 }

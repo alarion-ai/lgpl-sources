@@ -1,0 +1,14 @@
+{
+  "arch": "arm64",
+  "build": "hb001647_0",
+  "build_number": 0,
+  "depends": [
+    "__osx >=11.0"
+  ],
+  "license": "LGPL-2.1-or-later",
+  "name": "fribidi",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1793323489033,
+  "version": "1.0.18"
+}

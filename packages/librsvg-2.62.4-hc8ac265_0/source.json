@@ -20,6 +20,6 @@
     }
   ],
   "shippedFiles": [
-    "lib/librsvg-2.2.dylib"
+    "site-packages/cv2/.dylibs/librsvg-2.2.dylib"
   ]
 }
