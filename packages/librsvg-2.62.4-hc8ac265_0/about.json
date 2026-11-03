@@ -1,0 +1,18 @@
+{
+  "channels": [
+    "https://conda.anaconda.org/conda-forge/"
+  ],
+  "extra": {
+    "flow_run_id": "azure_20260924.2.1",
+    "recipe-maintainers": [
+      "pkgw",
+      "tschoonj",
+      "xhochy"
+    ],
+    "remote_url": "https://github.com/conda-forge/librsvg-feedstock",
+    "sha": "861fd4701bffbbaeb7c50dfc9be71fa0f97856f9"
+  },
+  "home": "https://wiki.gnome.org/Projects/LibRsvg",
+  "license": "LGPL-2.1-or-later",
+  "summary": "librsvg is a library to render SVG files using cairo."
+}

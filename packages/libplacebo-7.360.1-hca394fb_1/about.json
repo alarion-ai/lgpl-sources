@@ -1,0 +1,19 @@
+{
+  "channels": [
+    "https://conda.anaconda.org/conda-forge/"
+  ],
+  "description": "Libplacebo is, in a nutshell, the core rendering algorithms and ideas of\nmpv rewritten as an independent library. It provides robust and efficient\nGPU rendering for a variety of multimedia applications.",
+  "dev_url": "https://code.videolan.org/videolan/libplacebo",
+  "extra": {
+    "flow_run_id": "azure_20260717.2.1",
+    "recipe-maintainers": [
+      "ndeybach",
+      "Tobias-Fischer"
+    ],
+    "remote_url": "https://github.com/conda-forge/libplacebo-feedstock",
+    "sha": "189551df7d4e8bbc7517c600e53d9913d0491a1a"
+  },
+  "home": "https://code.videolan.org/videolan/libplacebo",
+  "license": "LGPL-2.1-or-later",
+  "summary": "Core rendering algorithms and ideas from mpv as an independent library"
+}

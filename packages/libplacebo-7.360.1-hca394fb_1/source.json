@@ -1,0 +1,23 @@
+{
+  "name": "libplacebo",
+  "version": "7.360.1",
+  "build": "hca394fb_1",
+  "licence": "LGPL-2.1-or-later",
+  "condaPackage": {
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libplacebo-7.360.1-hca394fb_1.conda",
+    "sha256": "7b50ecb8b110540b5b980ba94499fe760947e079bc119a7fac02dfb3df9cfb53"
+  },
+  "feedstock": "https://github.com/conda-forge/libplacebo-feedstock/tree/189551df7d4e8bbc7517c600e53d9913d0491a1a",
+  "directory": "packages/libplacebo-7.360.1-hca394fb_1",
+  "sources": [
+    {
+      "file": "source/v7.360.1.tar.gz",
+      "upstreamUrl": "https://github.com/haasn/libplacebo/archive/refs/tags/v7.360.1.tar.gz",
+      "sha256": "d05fdf90bea2f629eaa2d115e909fd356388ac639e54f77b87a018a6d76224bd",
+      "patches": []
+    }
+  ],
+  "shippedFiles": [
+    "lib/libplacebo.360.dylib"
+  ]
+}

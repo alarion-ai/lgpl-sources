@@ -1,0 +1,23 @@
+{
+  "name": "mpg123",
+  "version": "1.33.7",
+  "build": "h0e3f465_1",
+  "licence": "LGPL-2.1-only",
+  "condaPackage": {
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/mpg123-1.33.7-h0e3f465_1.conda",
+    "sha256": "36cdae1076fc8d92b030af4e8d02e32629aaa31dbe32233040a04d495815b0bb"
+  },
+  "feedstock": "https://github.com/conda-forge/mpg123-feedstock/tree/d4c5d4a3ec7e3435cedc414a004bec9d3f808c11",
+  "directory": "packages/mpg123-1.33.7-h0e3f465_1",
+  "sources": [
+    {
+      "file": "source/mpg123-1.33.7.tar.bz2",
+      "upstreamUrl": "https://downloads.sourceforge.net/project/mpg123/mpg123/1.33.7/mpg123-1.33.7.tar.bz2",
+      "sha256": "31d0e35a4ca567ec9b5ebda6c3062bb4435d6d3eacd6ef0d95cadd7854dc03ee",
+      "patches": []
+    }
+  ],
+  "shippedFiles": [
+    "lib/libmpg123.0.dylib"
+  ]
+}

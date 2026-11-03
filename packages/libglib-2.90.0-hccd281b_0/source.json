@@ -1,0 +1,29 @@
+{
+  "name": "libglib",
+  "version": "2.90.0",
+  "build": "hccd281b_0",
+  "licence": "LGPL-2.1-or-later",
+  "condaPackage": {
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libglib-2.90.0-hccd281b_0.conda",
+    "sha256": "4ec64c476881b31f211842952f192208a3af0925a596da227f4d97fb9a63e0ac"
+  },
+  "feedstock": "https://github.com/conda-forge/glib-feedstock/tree/680d46a6d7a6dae4cb68234c72067a9d20313633",
+  "directory": "packages/libglib-2.90.0-hccd281b_0",
+  "sources": [
+    {
+      "file": "source/glib-2.90.0.tar.xz",
+      "upstreamUrl": "https://download.gnome.org/sources/glib/2.90/glib-2.90.0.tar.xz",
+      "sha256": "17d15cac2af80a33271127408e0abc2748eb297c595c2a26409e81e14e7d1b8f",
+      "patches": [
+        "patches/0001-Remove-hard-coded-paths.patch",
+        "patches/0002-crossplatform-test-tweaks.patch"
+      ]
+    }
+  ],
+  "shippedFiles": [
+    "lib/libgio-2.0.0.dylib",
+    "lib/libglib-2.0.0.dylib",
+    "lib/libgmodule-2.0.0.dylib",
+    "lib/libgobject-2.0.0.dylib"
+  ]
+}

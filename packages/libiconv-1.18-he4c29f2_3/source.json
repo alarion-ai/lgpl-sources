@@ -1,0 +1,25 @@
+{
+  "name": "libiconv",
+  "version": "1.18",
+  "build": "he4c29f2_3",
+  "licence": "LGPL-2.1-only",
+  "condaPackage": {
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libiconv-1.18-he4c29f2_3.conda",
+    "sha256": "689a14968267f2f97c07112fca5636e7d756036b9aee969911267c20bd3eea1f"
+  },
+  "feedstock": "https://github.com/conda-forge/libiconv-feedstock/tree/c7fdcb1b68d6579a08d0c5dc5f34cbbf38780538",
+  "directory": "packages/libiconv-1.18-he4c29f2_3",
+  "sources": [
+    {
+      "file": "source/libiconv-1.18.tar.gz",
+      "upstreamUrl": "http://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.18.tar.gz",
+      "sha256": "3b08f5f4f9b4eb82f151a7040bfd6fe6c6fb922efe4b1659c66ea933276965e8",
+      "patches": [
+        "utf_8_mac.patch"
+      ]
+    }
+  ],
+  "shippedFiles": [
+    "lib/libiconv.2.dylib"
+  ]
+}

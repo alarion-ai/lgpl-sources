@@ -1,0 +1,25 @@
+{
+  "name": "libintl",
+  "version": "0.25.1",
+  "build": "hae62183_2",
+  "licence": "LGPL-2.1-or-later",
+  "condaPackage": {
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libintl-0.25.1-hae62183_2.conda",
+    "sha256": "b43c6645e668f86d04d5c06d6dc17efe921bbd9244be4b77946d56fb950a3fcc"
+  },
+  "feedstock": "https://github.com/conda-forge/gettext-feedstock/tree/19edcefc1ebbaa06c80f9af85d8f0d32ad5d8d40",
+  "directory": "packages/libintl-0.25.1-hae62183_2",
+  "sources": [
+    {
+      "file": "source/gettext-0.25.1.tar.xz",
+      "upstreamUrl": "https://ftp.gnu.org/pub/gnu/gettext/gettext-0.25.1.tar.xz",
+      "sha256": "2c8294be238f03fb3fa65b8051057e5b68167f3e21f08008070cf40a7051ba22",
+      "patches": [
+        "0009-string-h-dont-redeclare-macro-functions.patch"
+      ]
+    }
+  ],
+  "shippedFiles": [
+    "lib/libintl.8.dylib"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "arch": "arm64",
+  "build": "hc8ac265_0",
+  "build_number": 0,
+  "constrains": [
+    "__osx >=11.0"
+  ],
+  "depends": [
+    "__osx >=11.0",
+    "pango >=1.58.2,<2.0a0",
+    "libglib >=2.90.0,<3.0a0",
+    "fontconfig >=2.18.3,<3.0a0",
+    "fonts-conda-ecosystem",
+    "libxml2-16 >=2.15.4",
+    "gdk-pixbuf >=2.44.8,<3.0a0",
+    "libharfbuzz >=14.5.0",
+    "cairo >=1.18.6,<2.0a0"
+  ],
+  "license": "LGPL-2.1-or-later",
+  "name": "librsvg",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1790276358897,
+  "version": "2.62.4"
+}

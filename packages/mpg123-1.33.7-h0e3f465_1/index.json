@@ -1,0 +1,16 @@
+{
+  "arch": "arm64",
+  "build": "h0e3f465_1",
+  "build_number": 1,
+  "depends": [
+    "__osx >=11.0",
+    "libcxx >=21"
+  ],
+  "license": "LGPL-2.1-only",
+  "license_family": "LGPL",
+  "name": "mpg123",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1787312032517,
+  "version": "1.33.7"
+}

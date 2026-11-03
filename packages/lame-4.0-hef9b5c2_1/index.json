@@ -1,0 +1,16 @@
+{
+  "arch": "arm64",
+  "build": "hef9b5c2_1",
+  "build_number": 1,
+  "depends": [
+    "__osx >=11.0",
+    "mpg123 >=1.33.7,<1.34.0a0"
+  ],
+  "license": "LGPL-2.0-only",
+  "license_family": "LGPL",
+  "name": "lame",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1786293154234,
+  "version": "4.0"
+}

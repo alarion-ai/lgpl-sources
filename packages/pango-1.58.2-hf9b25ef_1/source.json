@@ -1,0 +1,25 @@
+{
+  "name": "pango",
+  "version": "1.58.2",
+  "build": "hf9b25ef_1",
+  "licence": "LGPL-2.1-or-later",
+  "condaPackage": {
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/pango-1.58.2-hf9b25ef_1.conda",
+    "sha256": "9ba23103198cffa523488ff583b184ad37eb6d90985d330a683a1039dc917771"
+  },
+  "feedstock": "https://github.com/conda-forge/pango-feedstock/tree/55181a3b42d2e1e9ed44065cb0bd8e4fd63cd5bd",
+  "directory": "packages/pango-1.58.2-hf9b25ef_1",
+  "sources": [
+    {
+      "file": "source/pango-1.58.2.tar.xz",
+      "upstreamUrl": "https://download.gnome.org/sources/pango/1.58/pango-1.58.2.tar.xz",
+      "sha256": "342385b6ca3b7c73455d7c80a13b7dbe4489e00bc3bd4c5bd6ed4dce421e374a",
+      "patches": []
+    }
+  ],
+  "shippedFiles": [
+    "lib/libpango-1.0.0.dylib",
+    "lib/libpangocairo-1.0.0.dylib",
+    "lib/libpangoft2-1.0.0.dylib"
+  ]
+}

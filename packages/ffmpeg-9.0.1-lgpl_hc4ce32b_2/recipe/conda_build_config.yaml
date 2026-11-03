@@ -1,0 +1,70 @@
+CI: azure
+CONDA_BUILD_SYSROOT: /opt/conda-sdks/MacOSX11.0.sdk
+MACOSX_DEPLOYMENT_TARGET: '11.0'
+MACOSX_SDK_VERSION: '11.0'
+aom: '3.14'
+build_number_increment: '0'
+build_platform: osx-64
+bzip2: '1'
+c_compiler: clang
+c_compiler_version: '21'
+c_stdlib: macosx_deployment_target
+c_stdlib_version: '11.0'
+channel_sources: conda-forge
+channel_targets: conda-forge main
+cpu_optimization_target: nocona
+cran_mirror: https://cran.r-project.org
+cuda_version_for_ffnvcodec: None
+cxx_compiler: clangxx
+cxx_compiler_version: '21'
+dav1d_devel: 1.5.4
+expat: '2'
+extend_keys:
+- ignore_build_only_deps
+- extend_keys
+- pin_run_as_build
+- ignore_version
+ffmpeg: '9'
+ffnvcodec_headers: None
+fontconfig: '2'
+fortran_compiler: gfortran
+freetype: '2'
+glib: '2'
+gmp: '6'
+ignore_build_only_deps:
+- numpy
+- python
+libiconv: '1'
+libjxl: '0.12'
+liblzma_devel: '5'
+libopenvino_dev: 2026.3.1
+libplacebo: '7.360'
+librsvg: '2'
+libwebp: '1'
+libxml2_devel: '2.15'
+license_family: lgpl
+lua: '5'
+macos_machine: arm64-apple-darwin20.0.0
+numpy: '1.26'
+openh264: 2.6.0
+openssl: '3.5'
+perl: 5.26.2
+pin_run_as_build:
+  python:
+    max_pin: x.x
+    min_pin: x.x
+  r-base:
+    max_pin: x.x
+    min_pin: x.x
+python: '3.12'
+r_base: '3.5'
+sdl2: '2'
+shaderc: '2026.3'
+svt_av1: 4.2.0
+target_platform: osx-arm64
+x264: 1!164.*
+x265: '3.5'
+zip_keys:
+- - c_compiler_version
+  - cxx_compiler_version
+zlib: '1'

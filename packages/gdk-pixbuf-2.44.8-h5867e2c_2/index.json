@@ -1,0 +1,21 @@
+{
+  "arch": "arm64",
+  "build": "h5867e2c_2",
+  "build_number": 2,
+  "depends": [
+    "__osx >=11.0",
+    "libglib >=2.88.3,<3.0a0",
+    "libintl >=0.25.1,<1.0a0",
+    "libjpeg-turbo >=3.2.0,<4.0a0",
+    "liblzma >=5.8.3,<6.0a0",
+    "libpng >=1.6.58,<1.7.0a0",
+    "libtiff >=4.7.2,<4.8.0a0"
+  ],
+  "license": "LGPL-2.1-or-later",
+  "license_family": "LGPL",
+  "name": "gdk-pixbuf",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1788490405006,
+  "version": "2.44.8"
+}
