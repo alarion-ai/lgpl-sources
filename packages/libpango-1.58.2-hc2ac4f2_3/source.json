@@ -18,8 +18,8 @@
     }
   ],
   "shippedFiles": [
-    "lib/python3.11/site-packages/cv2/.dylibs/libpango-1.0.0.dylib",
-    "lib/python3.11/site-packages/cv2/.dylibs/libpangocairo-1.0.0.dylib",
-    "lib/python3.11/site-packages/cv2/.dylibs/libpangoft2-1.0.0.dylib"
+    "site-packages/cv2/.dylibs/libpango-1.0.0.dylib",
+    "site-packages/cv2/.dylibs/libpangocairo-1.0.0.dylib",
+    "site-packages/cv2/.dylibs/libpangoft2-1.0.0.dylib"
   ]
 }

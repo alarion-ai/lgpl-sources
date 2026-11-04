@@ -25,12 +25,12 @@
     }
   ],
   "shippedFiles": [
-    "lib/python3.11/site-packages/cv2/.dylibs/libavcodec.63.1.102.dylib",
-    "lib/python3.11/site-packages/cv2/.dylibs/libavdevice.63.1.102.dylib",
-    "lib/python3.11/site-packages/cv2/.dylibs/libavfilter.12.1.102.dylib",
-    "lib/python3.11/site-packages/cv2/.dylibs/libavformat.63.1.102.dylib",
-    "lib/python3.11/site-packages/cv2/.dylibs/libavutil.61.1.102.dylib",
-    "lib/python3.11/site-packages/cv2/.dylibs/libswresample.7.1.102.dylib",
-    "lib/python3.11/site-packages/cv2/.dylibs/libswscale.10.1.102.dylib"
+    "site-packages/cv2/.dylibs/libavcodec.63.1.102.dylib",
+    "site-packages/cv2/.dylibs/libavdevice.63.1.102.dylib",
+    "site-packages/cv2/.dylibs/libavfilter.12.1.102.dylib",
+    "site-packages/cv2/.dylibs/libavformat.63.1.102.dylib",
+    "site-packages/cv2/.dylibs/libavutil.61.1.102.dylib",
+    "site-packages/cv2/.dylibs/libswresample.7.1.102.dylib",
+    "site-packages/cv2/.dylibs/libswscale.10.1.102.dylib"
   ]
 }
