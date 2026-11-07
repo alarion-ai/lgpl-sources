@@ -24,6 +24,6 @@
     }
   ],
   "shippedFiles": [
-    "site-packages/cv2/.dylibs/libmp3lame.0.dylib"
+    "lib/python3.11/site-packages/cv2/.dylibs/libmp3lame.0.dylib"
   ]
 }

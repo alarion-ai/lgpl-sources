@@ -18,6 +18,6 @@
     }
   ],
   "shippedFiles": [
-    "site-packages/cv2/.dylibs/libmpg123.0.dylib"
+    "lib/python3.11/site-packages/cv2/.dylibs/libmpg123.0.dylib"
   ]
 }
