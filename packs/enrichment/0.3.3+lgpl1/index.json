@@ -1,0 +1,347 @@
+{
+  "pack": "enrichment",
+  "version": "0.3.3+lgpl1",
+  "packSha256": "bef475f4a37826231bab23173701819f893823c2a935942b073f5816f24defb4",
+  "condaSpecs": [
+    "python=3.11",
+    "libopencv=5.0.0=headless_h0b61b25_11",
+    "py-opencv=5.0.0=headless_h21b9409_11",
+    "ffmpeg=9.0.2=lgpl_h1d9c18f_5"
+  ],
+  "packages": [
+    {
+      "name": "cairo",
+      "version": "1.18.6",
+      "build": "h580cee5_0",
+      "licence": "LGPL-2.1-only or MPL-1.1",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/osx-arm64/cairo-1.18.6-h580cee5_0.conda",
+        "sha256": "32ad9b731d0b4c6dd82061201206164b07bd695bc695e5eb3addc0087ed54cca"
+      },
+      "feedstock": "https://github.com/conda-forge/cairo-feedstock/tree/8b534c45e4a7945ac29aa8bd177109af1c318594",
+      "directory": "packages/cairo-1.18.6-h580cee5_0",
+      "sources": [
+        {
+          "file": "source/cairo-1.18.6.tar.xz",
+          "upstreamUrl": "http://cairographics.org/releases/cairo-1.18.6.tar.xz",
+          "sha256": "1c767308174337a74694da0f3ec069c271452163a1ef4540964c50c301f157d4",
+          "patches": [
+            "meson-darwin-versions.patch"
+          ]
+        }
+      ],
+      "shippedFiles": [
+        "lib/python3.11/site-packages/cv2/.dylibs/libcairo.2.dylib"
+      ]
+    },
+    {
+      "name": "ffmpeg",
+      "version": "9.0.2",
+      "build": "lgpl_h1d9c18f_5",
+      "licence": "LGPL-2.1-or-later",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/osx-arm64/ffmpeg-9.0.2-lgpl_h1d9c18f_5.conda",
+        "sha256": "940d362c7e2b194d5a9887edca11dd5075b8d46a0d2c9c0bbaaa9350c5fa0c44"
+      },
+      "feedstock": "https://github.com/conda-forge/ffmpeg-feedstock/tree/86baa8908502ede48ee12292d211ecf77b8924f0",
+      "directory": "packages/ffmpeg-9.0.2-lgpl_h1d9c18f_5",
+      "sources": [
+        {
+          "file": "source/ffmpeg-9.0.2.tar.gz",
+          "upstreamUrl": "https://ffmpeg.org/releases/ffmpeg-9.0.2.tar.gz",
+          "sha256": "84960df915059e8754fef2cd7c9afeb614062b1b5458ec471eecee619ee04e98",
+          "patches": [
+            "patches/0002-Revert-compat-Use-instead-of-for-rc.exe-options.patch",
+            "patches/0003-disable-gnu-windres.patch",
+            "patches/0004-Remove-private-requirements-to-help-downstream-compi.patch",
+            "patches/0005-Chromium-patches-for-qtwebengine.patch",
+            "patches/0006-Use-forward-lahs-on-windows.patch",
+            "patches/0007-avcodec-nvenc-fix-double-free-of-the-input-buffer.patch"
+          ]
+        }
+      ],
+      "shippedFiles": [
+        "lib/python3.11/site-packages/cv2/.dylibs/libavcodec.63.1.102.dylib",
+        "lib/python3.11/site-packages/cv2/.dylibs/libavdevice.63.1.102.dylib",
+        "lib/python3.11/site-packages/cv2/.dylibs/libavfilter.12.1.102.dylib",
+        "lib/python3.11/site-packages/cv2/.dylibs/libavformat.63.1.102.dylib",
+        "lib/python3.11/site-packages/cv2/.dylibs/libavutil.61.1.102.dylib",
+        "lib/python3.11/site-packages/cv2/.dylibs/libswresample.7.1.102.dylib",
+        "lib/python3.11/site-packages/cv2/.dylibs/libswscale.10.1.102.dylib"
+      ]
+    },
+    {
+      "name": "fribidi",
+      "version": "1.0.18",
+      "build": "hb001647_0",
+      "licence": "LGPL-2.1-or-later",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/osx-arm64/fribidi-1.0.18-hb001647_0.conda",
+        "sha256": "0eb7cf0378cfd45c4729e2eedd896bc1fab01872d1ed204d6ea8bbf853a0138d"
+      },
+      "feedstock": "https://github.com/conda-forge/fribidi-feedstock/tree/b9db9159f1a9f68dad478b097761906fd77e7d55",
+      "directory": "packages/fribidi-1.0.18-hb001647_0",
+      "sources": [
+        {
+          "file": "source/fribidi-1.0.18.tar.xz",
+          "upstreamUrl": "https://github.com/fribidi/fribidi/releases/download/v1.0.18/fribidi-1.0.18.tar.xz",
+          "sha256": "1de5e8073d035388b71d0b2d452b1da1f8caeea8a7702997b401fe1b6250727f",
+          "patches": []
+        }
+      ],
+      "shippedFiles": [
+        "lib/python3.11/site-packages/cv2/.dylibs/libfribidi.0.dylib"
+      ]
+    },
+    {
+      "name": "gdk-pixbuf",
+      "version": "2.44.8",
+      "build": "h5867e2c_2",
+      "licence": "LGPL-2.1-or-later",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/osx-arm64/gdk-pixbuf-2.44.8-h5867e2c_2.conda",
+        "sha256": "96dcac22eaea2f24b9c92e8be078c3e39058829aa4db2a8103c1a4e85f8925ed"
+      },
+      "feedstock": "https://github.com/conda-forge/gdk-pixbuf-feedstock/tree/298cae6c841f515bee104df16b112d5cf713c087",
+      "directory": "packages/gdk-pixbuf-2.44.8-h5867e2c_2",
+      "sources": [
+        {
+          "file": "source/gdk-pixbuf-2.44.8.tar.xz",
+          "upstreamUrl": "http://ftp.gnome.org/pub/gnome/sources/gdk-pixbuf/2.44/gdk-pixbuf-2.44.8.tar.xz",
+          "sha256": "919f529512961a12e81cd4b4b466a48c3933469e7f9a310c6513cd4fb252ba3c",
+          "patches": []
+        }
+      ],
+      "shippedFiles": [
+        "lib/python3.11/site-packages/cv2/.dylibs/libgdk_pixbuf-2.0.0.dylib"
+      ]
+    },
+    {
+      "name": "graphite2",
+      "version": "1.3.15",
+      "build": "h784d473_1",
+      "licence": "LGPL-2.0-or-later",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/osx-arm64/graphite2-1.3.15-h784d473_1.conda",
+        "sha256": "471f34a187fdb4f2df33e26f2e471b16c239a5b277903f643d9c3a8c9a9f44ec"
+      },
+      "feedstock": "https://github.com/conda-forge/graphite2-feedstock/tree/ba0a8e0362b411f2fa172e105d805270ac086509",
+      "directory": "packages/graphite2-1.3.15-h784d473_1",
+      "sources": [
+        {
+          "file": "source/graphite2-1.3.15.tgz",
+          "upstreamUrl": "https://github.com/silnrsi/graphite/releases/download/1.3.15/graphite2-1.3.15.tgz",
+          "sha256": "c6bc8b4252724665297f7cad0c55897285c673f9b8e6db3522ace833593fe0b1",
+          "patches": []
+        }
+      ],
+      "shippedFiles": [
+        "lib/python3.11/site-packages/cv2/.dylibs/libgraphite2.3.3.1.dylib"
+      ]
+    },
+    {
+      "name": "lame",
+      "version": "4.0",
+      "build": "hef9b5c2_1",
+      "licence": "LGPL-2.0-only",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/osx-arm64/lame-4.0-hef9b5c2_1.conda",
+        "sha256": "98b9195b315777c9cf1d785b5d43f223bafadbb2c5467116d688bd96305fa353"
+      },
+      "feedstock": "https://github.com/conda-forge/lame-feedstock/tree/99f0db95ef708de39d246a738195c6722b981621",
+      "directory": "packages/lame-4.0-hef9b5c2_1",
+      "sources": [
+        {
+          "file": "source/lame-4.0.tar.gz",
+          "upstreamUrl": "https://downloads.sourceforge.net/sourceforge/lame/lame-4.0.tar.gz",
+          "sha256": "3df5124d5ad3a98312ffd7ba6a9b36230e4f8a3e66d3ce0f425e336c32d216eb",
+          "patches": [
+            "fix_id3tag_ucs2_decls.patch",
+            "fix_id3tag_utf8_casts.patch",
+            "fix_id3v2tag_utf8_frontend.patch",
+            "fix_missing_locale_include.patch",
+            "fixup_windows_build.patch"
+          ]
+        }
+      ],
+      "shippedFiles": [
+        "lib/python3.11/site-packages/cv2/.dylibs/libmp3lame.0.dylib"
+      ]
+    },
+    {
+      "name": "libglib",
+      "version": "2.90.0",
+      "build": "hccd281b_0",
+      "licence": "LGPL-2.1-or-later",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libglib-2.90.0-hccd281b_0.conda",
+        "sha256": "4ec64c476881b31f211842952f192208a3af0925a596da227f4d97fb9a63e0ac"
+      },
+      "feedstock": "https://github.com/conda-forge/glib-feedstock/tree/680d46a6d7a6dae4cb68234c72067a9d20313633",
+      "directory": "packages/libglib-2.90.0-hccd281b_0",
+      "sources": [
+        {
+          "file": "source/glib-2.90.0.tar.xz",
+          "upstreamUrl": "https://download.gnome.org/sources/glib/2.90/glib-2.90.0.tar.xz",
+          "sha256": "17d15cac2af80a33271127408e0abc2748eb297c595c2a26409e81e14e7d1b8f",
+          "patches": [
+            "patches/0001-Remove-hard-coded-paths.patch",
+            "patches/0002-crossplatform-test-tweaks.patch"
+          ]
+        }
+      ],
+      "shippedFiles": [
+        "lib/python3.11/site-packages/cv2/.dylibs/libgio-2.0.0.dylib",
+        "lib/python3.11/site-packages/cv2/.dylibs/libglib-2.0.0.dylib",
+        "lib/python3.11/site-packages/cv2/.dylibs/libgmodule-2.0.0.dylib",
+        "lib/python3.11/site-packages/cv2/.dylibs/libgobject-2.0.0.dylib"
+      ]
+    },
+    {
+      "name": "libiconv",
+      "version": "1.18",
+      "build": "he4c29f2_3",
+      "licence": "LGPL-2.1-only",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libiconv-1.18-he4c29f2_3.conda",
+        "sha256": "689a14968267f2f97c07112fca5636e7d756036b9aee969911267c20bd3eea1f"
+      },
+      "feedstock": "https://github.com/conda-forge/libiconv-feedstock/tree/c7fdcb1b68d6579a08d0c5dc5f34cbbf38780538",
+      "directory": "packages/libiconv-1.18-he4c29f2_3",
+      "sources": [
+        {
+          "file": "source/libiconv-1.18.tar.gz",
+          "upstreamUrl": "http://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.18.tar.gz",
+          "sha256": "3b08f5f4f9b4eb82f151a7040bfd6fe6c6fb922efe4b1659c66ea933276965e8",
+          "patches": [
+            "utf_8_mac.patch"
+          ]
+        }
+      ],
+      "shippedFiles": [
+        "lib/python3.11/site-packages/cv2/.dylibs/libiconv.2.dylib"
+      ]
+    },
+    {
+      "name": "libintl",
+      "version": "0.25.1",
+      "build": "hae62183_2",
+      "licence": "LGPL-2.1-or-later",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libintl-0.25.1-hae62183_2.conda",
+        "sha256": "b43c6645e668f86d04d5c06d6dc17efe921bbd9244be4b77946d56fb950a3fcc"
+      },
+      "feedstock": "https://github.com/conda-forge/gettext-feedstock/tree/19edcefc1ebbaa06c80f9af85d8f0d32ad5d8d40",
+      "directory": "packages/libintl-0.25.1-hae62183_2",
+      "sources": [
+        {
+          "file": "source/gettext-0.25.1.tar.xz",
+          "upstreamUrl": "https://ftp.gnu.org/pub/gnu/gettext/gettext-0.25.1.tar.xz",
+          "sha256": "2c8294be238f03fb3fa65b8051057e5b68167f3e21f08008070cf40a7051ba22",
+          "patches": [
+            "0009-string-h-dont-redeclare-macro-functions.patch"
+          ]
+        }
+      ],
+      "shippedFiles": [
+        "lib/python3.11/site-packages/cv2/.dylibs/libintl.8.dylib"
+      ]
+    },
+    {
+      "name": "libpango",
+      "version": "1.58.2",
+      "build": "hc2ac4f2_3",
+      "licence": "LGPL-2.1-or-later",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libpango-1.58.2-hc2ac4f2_3.conda",
+        "sha256": "90118019ce64d713888abbe41a15be9e5885bdc8d5d4f84480e615299d2b5a01"
+      },
+      "feedstock": "https://github.com/conda-forge/pango-feedstock/tree/a44a7ad3c99350e12d2c20c5953e21a137d89094",
+      "directory": "packages/libpango-1.58.2-hc2ac4f2_3",
+      "sources": [
+        {
+          "file": "source/pango-1.58.2.tar.xz",
+          "upstreamUrl": "https://download.gnome.org/sources/pango/1.58/pango-1.58.2.tar.xz",
+          "sha256": "342385b6ca3b7c73455d7c80a13b7dbe4489e00bc3bd4c5bd6ed4dce421e374a",
+          "patches": []
+        }
+      ],
+      "shippedFiles": [
+        "lib/python3.11/site-packages/cv2/.dylibs/libpango-1.0.0.dylib",
+        "lib/python3.11/site-packages/cv2/.dylibs/libpangocairo-1.0.0.dylib",
+        "lib/python3.11/site-packages/cv2/.dylibs/libpangoft2-1.0.0.dylib"
+      ]
+    },
+    {
+      "name": "libplacebo",
+      "version": "7.360.1",
+      "build": "h8466173_2",
+      "licence": "LGPL-2.1-or-later",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libplacebo-7.360.1-h8466173_2.conda",
+        "sha256": "f271f68926597eaaf2b226d62870352f2e4d2a9e6f5966d67a701c72d908995b"
+      },
+      "feedstock": "https://github.com/conda-forge/libplacebo-feedstock/tree/59d026ae4f1d6a45d34c2c38fe28c8dbfa033cbd",
+      "directory": "packages/libplacebo-7.360.1-h8466173_2",
+      "sources": [
+        {
+          "file": "source/v7.360.1.tar.gz",
+          "upstreamUrl": "https://github.com/haasn/libplacebo/archive/refs/tags/v7.360.1.tar.gz",
+          "sha256": "d05fdf90bea2f629eaa2d115e909fd356388ac639e54f77b87a018a6d76224bd",
+          "patches": []
+        }
+      ],
+      "shippedFiles": [
+        "lib/python3.11/site-packages/cv2/.dylibs/libplacebo.360.dylib"
+      ]
+    },
+    {
+      "name": "librsvg",
+      "version": "2.62.4",
+      "build": "hc8ac265_0",
+      "licence": "LGPL-2.1-or-later",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/osx-arm64/librsvg-2.62.4-hc8ac265_0.conda",
+        "sha256": "3bd54de0136907782249a0d5797744ecac5bbd77026f5f2712dd62390c5c9f77"
+      },
+      "feedstock": "https://github.com/conda-forge/librsvg-feedstock/tree/861fd4701bffbbaeb7c50dfc9be71fa0f97856f9",
+      "directory": "packages/librsvg-2.62.4-hc8ac265_0",
+      "sources": [
+        {
+          "file": "source/librsvg-2.62.4.tar.xz",
+          "upstreamUrl": "https://download.gnome.org/sources/librsvg/2.62/librsvg-2.62.4.tar.xz",
+          "sha256": "c982b8157a054b803493bf994d31e50105eb948dd8da6b4ab9734e8d392712a3",
+          "patches": [
+            "add_rust_lto.patch"
+          ]
+        }
+      ],
+      "shippedFiles": [
+        "lib/python3.11/site-packages/cv2/.dylibs/librsvg-2.2.dylib"
+      ]
+    },
+    {
+      "name": "mpg123",
+      "version": "1.33.7",
+      "build": "h0e3f465_1",
+      "licence": "LGPL-2.1-only",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/osx-arm64/mpg123-1.33.7-h0e3f465_1.conda",
+        "sha256": "36cdae1076fc8d92b030af4e8d02e32629aaa31dbe32233040a04d495815b0bb"
+      },
+      "feedstock": "https://github.com/conda-forge/mpg123-feedstock/tree/d4c5d4a3ec7e3435cedc414a004bec9d3f808c11",
+      "directory": "packages/mpg123-1.33.7-h0e3f465_1",
+      "sources": [
+        {
+          "file": "source/mpg123-1.33.7.tar.bz2",
+          "upstreamUrl": "https://downloads.sourceforge.net/project/mpg123/mpg123/1.33.7/mpg123-1.33.7.tar.bz2",
+          "sha256": "31d0e35a4ca567ec9b5ebda6c3062bb4435d6d3eacd6ef0d95cadd7854dc03ee",
+          "patches": []
+        }
+      ],
+      "shippedFiles": [
+        "lib/python3.11/site-packages/cv2/.dylibs/libmpg123.0.dylib"
+      ]
+    }
+  ]
+}
