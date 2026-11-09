@@ -1,0 +1,343 @@
+{
+  "pack": "ffmpeg",
+  "version": "9.0.2",
+  "packSha256": "f5138e8eca95950349668ef79490a34ab3ba7165ccbd43339f66645a1ab17270",
+  "condaSpecs": [
+    "ffmpeg=9.0.2=lgpl_hf2461e7_5"
+  ],
+  "packages": [
+    {
+      "name": "cairo",
+      "version": "1.18.6",
+      "build": "h477c42c_0",
+      "licence": "LGPL-2.1-only or MPL-1.1",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/win-64/cairo-1.18.6-h477c42c_0.conda",
+        "sha256": "af62a4e441719050878d050d242619f8256a891983515950f8fb877137868a45"
+      },
+      "feedstock": "https://github.com/conda-forge/cairo-feedstock/tree/8b534c45e4a7945ac29aa8bd177109af1c318594",
+      "directory": "packages/cairo-1.18.6-h477c42c_0",
+      "sources": [
+        {
+          "file": "source/cairo-1.18.6.tar.xz",
+          "upstreamUrl": "http://cairographics.org/releases/cairo-1.18.6.tar.xz",
+          "sha256": "1c767308174337a74694da0f3ec069c271452163a1ef4540964c50c301f157d4",
+          "patches": [
+            "meson-darwin-versions.patch",
+            "windows-soversion-continuity.patch"
+          ]
+        }
+      ],
+      "shippedFiles": [
+        "bin/cairo.dll"
+      ]
+    },
+    {
+      "name": "ffmpeg",
+      "version": "9.0.2",
+      "build": "lgpl_hf2461e7_5",
+      "licence": "LGPL-2.1-or-later",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/win-64/ffmpeg-9.0.2-lgpl_hf2461e7_5.conda",
+        "sha256": "7e39f6c8ad5a9335e7000db8cc4071aa88add6e8fc148fbd8cff1fad0cc60faa"
+      },
+      "feedstock": "https://github.com/conda-forge/ffmpeg-feedstock/tree/86baa8908502ede48ee12292d211ecf77b8924f0",
+      "directory": "packages/ffmpeg-9.0.2-lgpl_hf2461e7_5",
+      "sources": [
+        {
+          "file": "source/ffmpeg-9.0.2.tar.gz",
+          "upstreamUrl": "https://ffmpeg.org/releases/ffmpeg-9.0.2.tar.gz",
+          "sha256": "84960df915059e8754fef2cd7c9afeb614062b1b5458ec471eecee619ee04e98",
+          "patches": [
+            "patches/0001-Generate-pkgconfig-for-windows.patch",
+            "patches/0002-Revert-compat-Use-instead-of-for-rc.exe-options.patch",
+            "patches/0003-disable-gnu-windres.patch",
+            "patches/0004-Remove-private-requirements-to-help-downstream-compi.patch",
+            "patches/0005-Chromium-patches-for-qtwebengine.patch",
+            "patches/0006-Use-forward-lahs-on-windows.patch",
+            "patches/0007-avcodec-nvenc-fix-double-free-of-the-input-buffer.patch"
+          ]
+        }
+      ],
+      "shippedFiles": [
+        "bin/avcodec-63.dll",
+        "bin/avdevice-63.dll",
+        "bin/avfilter-12.dll",
+        "bin/avformat-63.dll",
+        "bin/avutil-61.dll",
+        "bin/ffmpeg.exe",
+        "bin/ffprobe.exe",
+        "bin/swresample-7.dll",
+        "bin/swscale-10.dll"
+      ]
+    },
+    {
+      "name": "fribidi",
+      "version": "1.0.18",
+      "build": "hfd05255_0",
+      "licence": "LGPL-2.1-or-later",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/win-64/fribidi-1.0.18-hfd05255_0.conda",
+        "sha256": "beb4dad871f0e1fcfb088698ec08898bca9f4b0b385053aafafe4eee352654b5"
+      },
+      "feedstock": "https://github.com/conda-forge/fribidi-feedstock/tree/b9db9159f1a9f68dad478b097761906fd77e7d55",
+      "directory": "packages/fribidi-1.0.18-hfd05255_0",
+      "sources": [
+        {
+          "file": "source/fribidi-1.0.18.tar.xz",
+          "upstreamUrl": "https://github.com/fribidi/fribidi/releases/download/v1.0.18/fribidi-1.0.18.tar.xz",
+          "sha256": "1de5e8073d035388b71d0b2d452b1da1f8caeea8a7702997b401fe1b6250727f",
+          "patches": []
+        }
+      ],
+      "shippedFiles": [
+        "bin/fribidi-0.dll"
+      ]
+    },
+    {
+      "name": "gdk-pixbuf",
+      "version": "2.44.8",
+      "build": "h1f5b9c4_2",
+      "licence": "LGPL-2.1-or-later",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/win-64/gdk-pixbuf-2.44.8-h1f5b9c4_2.conda",
+        "sha256": "c97af0d751d2afb09b1728946dd9ded817ab8a3805da6ac2c0bc55c9894cd2d5"
+      },
+      "feedstock": "https://github.com/conda-forge/gdk-pixbuf-feedstock/tree/298cae6c841f515bee104df16b112d5cf713c087",
+      "directory": "packages/gdk-pixbuf-2.44.8-h1f5b9c4_2",
+      "sources": [
+        {
+          "file": "source/gdk-pixbuf-2.44.8.tar.xz",
+          "upstreamUrl": "http://ftp.gnome.org/pub/gnome/sources/gdk-pixbuf/2.44/gdk-pixbuf-2.44.8.tar.xz",
+          "sha256": "919f529512961a12e81cd4b4b466a48c3933469e7f9a310c6513cd4fb252ba3c",
+          "patches": []
+        }
+      ],
+      "shippedFiles": [
+        "bin/gdk_pixbuf-2.0-0.dll"
+      ]
+    },
+    {
+      "name": "graphite2",
+      "version": "1.3.15",
+      "build": "h5112557_1",
+      "licence": "LGPL-2.0-or-later",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/win-64/graphite2-1.3.15-h5112557_1.conda",
+        "sha256": "93a59bdf944fb6f947bd7ad2f293d5d80db3a90f8ff8dfabc591e3752141e46f"
+      },
+      "feedstock": "https://github.com/conda-forge/graphite2-feedstock/tree/ba0a8e0362b411f2fa172e105d805270ac086509",
+      "directory": "packages/graphite2-1.3.15-h5112557_1",
+      "sources": [
+        {
+          "file": "source/graphite2-1.3.15.tgz",
+          "upstreamUrl": "https://github.com/silnrsi/graphite/releases/download/1.3.15/graphite2-1.3.15.tgz",
+          "sha256": "c6bc8b4252724665297f7cad0c55897285c673f9b8e6db3522ace833593fe0b1",
+          "patches": [
+            "001-graphite2-1.3.12-win64.patch",
+            "002-graphite2-1.2.1-pkgconfig.patch",
+            "004-graphite2-1.3.12-dllimport-fix.patch"
+          ]
+        }
+      ],
+      "shippedFiles": [
+        "bin/graphite2.dll"
+      ]
+    },
+    {
+      "name": "lame",
+      "version": "4.0",
+      "build": "h0c5f640_1",
+      "licence": "LGPL-2.0-only",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/win-64/lame-4.0-h0c5f640_1.conda",
+        "sha256": "c1df9067381c938f819639a3c1b151a28bd1880c044951b5e14785a89fd91cf5"
+      },
+      "feedstock": "https://github.com/conda-forge/lame-feedstock/tree/99f0db95ef708de39d246a738195c6722b981621",
+      "directory": "packages/lame-4.0-h0c5f640_1",
+      "sources": [
+        {
+          "file": "source/lame-4.0.tar.gz",
+          "upstreamUrl": "https://downloads.sourceforge.net/sourceforge/lame/lame-4.0.tar.gz",
+          "sha256": "3df5124d5ad3a98312ffd7ba6a9b36230e4f8a3e66d3ce0f425e336c32d216eb",
+          "patches": [
+            "fix_id3tag_ucs2_decls.patch",
+            "fix_id3tag_utf8_casts.patch",
+            "fix_id3v2tag_utf8_frontend.patch",
+            "fix_missing_locale_include.patch",
+            "fixup_windows_build.patch"
+          ]
+        }
+      ],
+      "shippedFiles": [
+        "bin/libmp3lame.dll"
+      ]
+    },
+    {
+      "name": "libglib",
+      "version": "2.90.1",
+      "build": "ha564072_0",
+      "licence": "LGPL-2.1-or-later",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/win-64/libglib-2.90.1-ha564072_0.conda",
+        "sha256": "7b44e3985afe6c5962a9e6489b5ad20b769c92513f071694bb74b07ecf3c9a97"
+      },
+      "feedstock": "https://github.com/conda-forge/glib-feedstock/tree/494a56fe1405fa8f1b555a31a4beb7df165c030c",
+      "directory": "packages/libglib-2.90.1-ha564072_0",
+      "sources": [
+        {
+          "file": "source/glib-2.90.1.tar.xz",
+          "upstreamUrl": "https://download.gnome.org/sources/glib/2.90/glib-2.90.1.tar.xz",
+          "sha256": "93c941aa17d5eb1d53fe838365f29a8b4e539c222a256d974ec8f30fc413e396",
+          "patches": [
+            "patches/0001-Remove-hard-coded-paths.patch",
+            "patches/0002-crossplatform-test-tweaks.patch",
+            "patches/0004-Manually-link-with-libiconv-whenever-we-use-libintl..patch",
+            "patches/0005-Increase-some-test-timeouts.patch"
+          ]
+        }
+      ],
+      "shippedFiles": [
+        "bin/gio-2.0-0.dll",
+        "bin/glib-2.0-0.dll",
+        "bin/gmodule-2.0-0.dll",
+        "bin/gobject-2.0-0.dll"
+      ]
+    },
+    {
+      "name": "libiconv",
+      "version": "1.18",
+      "build": "hc1393d2_3",
+      "licence": "LGPL-2.1-only",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/win-64/libiconv-1.18-hc1393d2_3.conda",
+        "sha256": "35e04e3ddac7720fc7c550a1c9f998604299d6a7bd1f3ec9b2825d825061daa2"
+      },
+      "feedstock": "https://github.com/conda-forge/libiconv-feedstock/tree/c7fdcb1b68d6579a08d0c5dc5f34cbbf38780538",
+      "directory": "packages/libiconv-1.18-hc1393d2_3",
+      "sources": [
+        {
+          "file": "source/libiconv-1.18.tar.gz",
+          "upstreamUrl": "http://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.18.tar.gz",
+          "sha256": "3b08f5f4f9b4eb82f151a7040bfd6fe6c6fb922efe4b1659c66ea933276965e8",
+          "patches": [
+            "CMakeLists.txt.patch",
+            "config.h.patch",
+            "configure.cmake.patch"
+          ]
+        }
+      ],
+      "shippedFiles": [
+        "bin/charset.dll",
+        "bin/iconv.dll"
+      ]
+    },
+    {
+      "name": "libintl",
+      "version": "0.22.5",
+      "build": "h5728263_4",
+      "licence": "LGPL-2.1-or-later",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/win-64/libintl-0.22.5-h5728263_4.conda",
+        "sha256": "85b50be2209f3b8a873830ec9894477d260f4c7ba9540e65959f5812bf7219f8"
+      },
+      "feedstock": "https://github.com/conda-forge/gettext-feedstock/tree/8e011f31bdfb82ad0e67ae47a8147146db7bba2f",
+      "directory": "packages/libintl-0.22.5-h5728263_4",
+      "sources": [
+        {
+          "file": "source/gettext-0.22.5.tar.xz",
+          "upstreamUrl": "https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.5.tar.xz",
+          "sha256": "fe10c37353213d78a5b83d48af231e005c4da84db5ce88037d88355938259640",
+          "patches": [
+            "0001-Mark-v-snprintf-as-available.patch",
+            "0002-Prevent-libtool-from-worrying-about-dependent-librar.patch",
+            "0003-Fix-some-DLL-export-markings-in-libintl.patch",
+            "0004-Fix-quoting-when-invoking-windres.patch",
+            "0005-CXXLD-is-not-a-thing.patch",
+            "0006-Work-around-Unixisms-in-libgettextpo.patch",
+            "0007-Add-missing-extern-C-protectors.patch",
+            "0008-Avoid-close-inconsistencies.patch"
+          ]
+        }
+      ],
+      "shippedFiles": [
+        "bin/intl-8.dll"
+      ]
+    },
+    {
+      "name": "libpango",
+      "version": "1.58.2",
+      "build": "h02b4fad_3",
+      "licence": "LGPL-2.1-or-later",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/win-64/libpango-1.58.2-h02b4fad_3.conda",
+        "sha256": "ebd53d4f4f7887f0c613952610f3a9e2040f4f323570d4e3bc5b51d298c0c23e"
+      },
+      "feedstock": "https://github.com/conda-forge/pango-feedstock/tree/a44a7ad3c99350e12d2c20c5953e21a137d89094",
+      "directory": "packages/libpango-1.58.2-h02b4fad_3",
+      "sources": [
+        {
+          "file": "source/pango-1.58.2.tar.xz",
+          "upstreamUrl": "https://download.gnome.org/sources/pango/1.58/pango-1.58.2.tar.xz",
+          "sha256": "342385b6ca3b7c73455d7c80a13b7dbe4489e00bc3bd4c5bd6ed4dce421e374a",
+          "patches": []
+        }
+      ],
+      "shippedFiles": [
+        "bin/pango-1.0-0.dll",
+        "bin/pangocairo-1.0-0.dll",
+        "bin/pangoft2-1.0-0.dll",
+        "bin/pangowin32-1.0-0.dll"
+      ]
+    },
+    {
+      "name": "librsvg",
+      "version": "2.62.4",
+      "build": "h5506a08_0",
+      "licence": "LGPL-2.1-or-later",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/win-64/librsvg-2.62.4-h5506a08_0.conda",
+        "sha256": "ba329e4bd97afd261a44933b599450bead02e519e8ec280a98aae438816fb7f9"
+      },
+      "feedstock": "https://github.com/conda-forge/librsvg-feedstock/tree/861fd4701bffbbaeb7c50dfc9be71fa0f97856f9",
+      "directory": "packages/librsvg-2.62.4-h5506a08_0",
+      "sources": [
+        {
+          "file": "source/librsvg-2.62.4.tar.xz",
+          "upstreamUrl": "https://download.gnome.org/sources/librsvg/2.62/librsvg-2.62.4.tar.xz",
+          "sha256": "c982b8157a054b803493bf994d31e50105eb948dd8da6b4ab9734e8d392712a3",
+          "patches": [
+            "add_rust_lto.patch",
+            "windows_gir.patch"
+          ]
+        }
+      ],
+      "shippedFiles": [
+        "bin/rsvg-2-2.dll"
+      ]
+    },
+    {
+      "name": "mpg123",
+      "version": "1.33.7",
+      "build": "ha58212f_1",
+      "licence": "LGPL-2.1-only",
+      "condaPackage": {
+        "url": "https://conda.anaconda.org/conda-forge/win-64/mpg123-1.33.7-ha58212f_1.conda",
+        "sha256": "c8a4c4580179383855c826b57720ecd10b4f526f19a7da63645cef50769069ba"
+      },
+      "feedstock": "https://github.com/conda-forge/mpg123-feedstock/tree/d4c5d4a3ec7e3435cedc414a004bec9d3f808c11",
+      "directory": "packages/mpg123-1.33.7-ha58212f_1",
+      "sources": [
+        {
+          "file": "source/mpg123-1.33.7.tar.bz2",
+          "upstreamUrl": "https://downloads.sourceforge.net/project/mpg123/mpg123/1.33.7/mpg123-1.33.7.tar.bz2",
+          "sha256": "31d0e35a4ca567ec9b5ebda6c3062bb4435d6d3eacd6ef0d95cadd7854dc03ee",
+          "patches": []
+        }
+      ],
+      "shippedFiles": [
+        "bin/mpg123.dll"
+      ]
+    }
+  ]
+}

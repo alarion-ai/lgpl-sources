@@ -1,0 +1,28 @@
+{
+  "name": "libiconv",
+  "version": "1.18",
+  "build": "hc1393d2_3",
+  "licence": "LGPL-2.1-only",
+  "condaPackage": {
+    "url": "https://conda.anaconda.org/conda-forge/win-64/libiconv-1.18-hc1393d2_3.conda",
+    "sha256": "35e04e3ddac7720fc7c550a1c9f998604299d6a7bd1f3ec9b2825d825061daa2"
+  },
+  "feedstock": "https://github.com/conda-forge/libiconv-feedstock/tree/c7fdcb1b68d6579a08d0c5dc5f34cbbf38780538",
+  "directory": "packages/libiconv-1.18-hc1393d2_3",
+  "sources": [
+    {
+      "file": "source/libiconv-1.18.tar.gz",
+      "upstreamUrl": "http://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.18.tar.gz",
+      "sha256": "3b08f5f4f9b4eb82f151a7040bfd6fe6c6fb922efe4b1659c66ea933276965e8",
+      "patches": [
+        "CMakeLists.txt.patch",
+        "config.h.patch",
+        "configure.cmake.patch"
+      ]
+    }
+  ],
+  "shippedFiles": [
+    "bin/charset.dll",
+    "bin/iconv.dll"
+  ]
+}
