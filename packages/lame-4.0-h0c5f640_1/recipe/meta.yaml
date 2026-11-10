@@ -1,0 +1,78 @@
+# This file created by conda-build 26.7.0
+# meta.yaml template originally from:
+# D:\a\lame-feedstock\lame-feedstock\recipe, last modified Sun Aug  9 16:18:52 2026
+# ------------------------------------------------
+
+package:
+  name: lame
+  version: '4.0'
+source:
+  url: https://downloads.sourceforge.net/sourceforge/lame/lame-4.0.tar.gz
+  sha256: 3df5124d5ad3a98312ffd7ba6a9b36230e4f8a3e66d3ce0f425e336c32d216eb
+  patches:
+    - fix_id3tag_ucs2_decls.patch
+    - fix_id3tag_utf8_casts.patch
+    - fix_id3v2tag_utf8_frontend.patch
+    - fix_missing_locale_include.patch
+    - fixup_windows_build.patch
+build:
+  number: '1'
+  run_exports:
+    - lame >=4.0,<4.1.0a0
+  string: h0c5f640_1
+requirements:
+  build:
+    - nasm 2.16.03 hfd05255_1
+    - ucrt 10.0.26100.0 h57928b3_0
+    - vc 14.5 ha367084_41
+    - vc14_runtime 14.51.36247 habf1de7_41
+    - vcomp14 14.51.36247 habf1de7_41
+    - vs2022_win-64 19.44.35207 ha74f236_41
+    - vs_win-64 2022.14 ha74f236_41
+    - vswhere 3.1.7 h40126e0_1
+  host:
+    - mpg123 1.33.7 h365c5b5_0
+    - ucrt 10.0.26100.0 h57928b3_0
+    - vc 14.5 ha367084_41
+    - vc14_runtime 14.51.36247 habf1de7_41
+    - vcomp14 14.51.36247 habf1de7_41
+  run:
+    - mpg123 >=1.33.7,<1.34.0a0
+    - ucrt >=10.0.20348.0
+    - vc >=14.3,<15
+    - vc14_runtime >=14.44.35208
+test:
+  commands:
+    - lame --genre-list testcase.mp3
+    - lame --longhelp
+    - if not exist %PREFIX%\\Library\\include\\lame\\lame.h exit 1
+about:
+  home: https://lame.sourceforge.io/
+  license: LGPL-2.0-only
+  license_family: LGPL
+  license_file: COPYING
+  summary: High quality MPEG Audio Layer III (MP3) encoder
+  description: 'LAME is a high quality MPEG Audio Layer III (MP3) encoder licensed
+    under the LGPL.
+
+    Today, LAME is considered the best MP3 encoder at mid-high bitrates and at VBR,
+    mostly
+
+    thanks to the dedicated work of its developers and the open source licensing model
+
+    that allowed the project to tap into engineering resources from all around the
+    world.
+
+    '
+  doc_url: http://lame.sourceforge.net/using.php
+  dev_url: https://svn.code.sf.net/p/lame/svn/trunk/lame/
+extra:
+  recipe-maintainers:
+    - bmcfee
+    - hmaarrfk
+    - soumith
+  final: true
+  copy_test_source_files: true
+  flow_run_id: github_31323449742
+  remote_url: https://github.com/conda-forge/lame-feedstock
+  sha: 99f0db95ef708de39d246a738195c6722b981621

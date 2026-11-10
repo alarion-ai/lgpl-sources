@@ -1,0 +1,26 @@
+{
+  "name": "libpango",
+  "version": "1.58.2",
+  "build": "h02b4fad_3",
+  "licence": "LGPL-2.1-or-later",
+  "condaPackage": {
+    "url": "https://conda.anaconda.org/conda-forge/win-64/libpango-1.58.2-h02b4fad_3.conda",
+    "sha256": "ebd53d4f4f7887f0c613952610f3a9e2040f4f323570d4e3bc5b51d298c0c23e"
+  },
+  "feedstock": "https://github.com/conda-forge/pango-feedstock/tree/a44a7ad3c99350e12d2c20c5953e21a137d89094",
+  "directory": "packages/libpango-1.58.2-h02b4fad_3",
+  "sources": [
+    {
+      "file": "source/pango-1.58.2.tar.xz",
+      "upstreamUrl": "https://download.gnome.org/sources/pango/1.58/pango-1.58.2.tar.xz",
+      "sha256": "342385b6ca3b7c73455d7c80a13b7dbe4489e00bc3bd4c5bd6ed4dce421e374a",
+      "patches": []
+    }
+  ],
+  "shippedFiles": [
+    "Lib/site-packages/cv2/python-3/pango-1.0-0.dll",
+    "Lib/site-packages/cv2/python-3/pangocairo-1.0-0.dll",
+    "Lib/site-packages/cv2/python-3/pangoft2-1.0-0.dll",
+    "Lib/site-packages/cv2/python-3/pangowin32-1.0-0.dll"
+  ]
+}

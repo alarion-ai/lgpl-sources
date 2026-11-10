@@ -1,0 +1,23 @@
+{
+  "name": "gdk-pixbuf",
+  "version": "2.44.8",
+  "build": "h1f5b9c4_2",
+  "licence": "LGPL-2.1-or-later",
+  "condaPackage": {
+    "url": "https://conda.anaconda.org/conda-forge/win-64/gdk-pixbuf-2.44.8-h1f5b9c4_2.conda",
+    "sha256": "c97af0d751d2afb09b1728946dd9ded817ab8a3805da6ac2c0bc55c9894cd2d5"
+  },
+  "feedstock": "https://github.com/conda-forge/gdk-pixbuf-feedstock/tree/298cae6c841f515bee104df16b112d5cf713c087",
+  "directory": "packages/gdk-pixbuf-2.44.8-h1f5b9c4_2",
+  "sources": [
+    {
+      "file": "source/gdk-pixbuf-2.44.8.tar.xz",
+      "upstreamUrl": "http://ftp.gnome.org/pub/gnome/sources/gdk-pixbuf/2.44/gdk-pixbuf-2.44.8.tar.xz",
+      "sha256": "919f529512961a12e81cd4b4b466a48c3933469e7f9a310c6513cd4fb252ba3c",
+      "patches": []
+    }
+  ],
+  "shippedFiles": [
+    "Lib/site-packages/cv2/python-3/gdk_pixbuf-2.0-0.dll"
+  ]
+}
