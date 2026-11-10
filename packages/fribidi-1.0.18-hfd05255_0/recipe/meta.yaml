@@ -1,0 +1,83 @@
+# This file created by conda-build 26.9.1
+# meta.yaml template originally from:
+# D:\a\fribidi-feedstock\fribidi-feedstock\recipe, last modified Fri Oct 30 01:22:39 2026
+# ------------------------------------------------
+
+package:
+  name: fribidi
+  version: 1.0.18
+source:
+  url: https://github.com/fribidi/fribidi/releases/download/v1.0.18/fribidi-1.0.18.tar.xz
+  sha256: 1de5e8073d035388b71d0b2d452b1da1f8caeea8a7702997b401fe1b6250727f
+build:
+  number: '0'
+  run_exports:
+    - fribidi >=1.0.18,<2.0a0
+  string: hfd05255_0
+requirements:
+  build:
+    - bzip2 1.0.8 h0ad9c76_10
+    - ca-certificates 2026.10.23 h4c7d964_0
+    - libexpat 2.9.0 hac47afa_0
+    - libffi 3.7.0 h3d046cb_1
+    - liblzma 5.8.3 hfd05255_1
+    - libmpdec 4.0.0 hfd05255_2
+    - libsqlite 3.54.1 hf5d6505_101
+    - libzlib 1.3.2 hfd05255_3
+    - meson 1.12.1 pyh5ded981_0
+    - ninja 1.13.2 h477610d_1
+    - openssl 3.6.5 hf411b9b_0
+    - python 3.15.2 h53f6dd8_100_cp315
+    - python_abi 3.15 9_cp315
+    - tk 8.6.13 h967ab96_4
+    - tzdata 2026e h5d301ff_0
+    - ucrt 10.0.26100.0 h57928b3_0
+    - vc 14.5 ha367084_42
+    - vc14_runtime 14.51.36247 habf1de7_42
+    - vcomp14 14.51.36247 habf1de7_42
+    - vs2022_win-64 19.44.35207 ha74f236_42
+    - vs_win-64 2022.14 ha74f236_42
+    - vswhere 3.1.7 h40126e0_1
+    - zstd 1.5.7 h534d264_7
+  host:
+    - ucrt 10.0.26100.0 h57928b3_0
+    - vc 14.5 ha367084_42
+    - vc14_runtime 14.51.36247 habf1de7_42
+    - vcomp14 14.51.36247 habf1de7_42
+  run:
+    - ucrt >=10.0.20348.0
+    - vc >=14.3,<15
+    - vc14_runtime >=14.44.35208
+test:
+  requires: null
+  commands:
+    - fribidi -h
+about:
+  home: https://github.com/fribidi/fribidi
+  license: LGPL-2.1-or-later
+  license_file: COPYING
+  summary: The Free Implementation of the Unicode Bidirectional Algorithm.
+  description: 'One of the missing links stopping the penetration of free software
+    in Middle
+
+    East is the lack of support for the Arabic and Hebrew alphabets. In order to
+
+    have proper Arabic and Hebrew support, the bidi algorithm needs to be
+
+    implemented. It is our hope that this library will stimulate more free
+
+    software in the Middle Eastern countries.
+
+    '
+  doc_url: https://github.com/fribidi/fribidi
+  dev_url: https://github.com/fribidi/fribidi
+extra:
+  recipe-maintainers:
+    - h-vetinari
+    - mariusvniekerk
+    - msarahan
+  final: true
+  copy_test_source_files: true
+  flow_run_id: github_40985460832
+  remote_url: https://github.com/conda-forge/fribidi-feedstock
+  sha: b9db9159f1a9f68dad478b097761906fd77e7d55

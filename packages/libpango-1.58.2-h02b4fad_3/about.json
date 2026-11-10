@@ -1,0 +1,23 @@
+{
+  "channels": [
+    "https://conda.anaconda.org/conda-forge/"
+  ],
+  "description": "Pango is a library for laying out and rendering of text, with an emphasis\non internationalization. Pango can be used anywhere that text layout is\nneeded, though most of the work on Pango so far has been done in the\ncontext of the GTK widget toolkit. Pango forms the core of text and font\nhandling for GTK.",
+  "dev_url": "https://gitlab.gnome.org/GNOME/pango",
+  "doc_url": "https://docs.gtk.org/Pango/",
+  "extra": {
+    "feedstock-name": "pango",
+    "flow_run_id": "github_38701408301",
+    "recipe-maintainers": [
+      "ocefpaf",
+      "ccordoba12",
+      "jakirkham",
+      "pkgw"
+    ],
+    "remote_url": "https://github.com/conda-forge/pango-feedstock",
+    "sha": "a44a7ad3c99350e12d2c20c5953e21a137d89094"
+  },
+  "home": "https://gitlab.gnome.org/GNOME/pango",
+  "license": "LGPL-2.1-or-later",
+  "summary": "Text layout and rendering engine."
+}
