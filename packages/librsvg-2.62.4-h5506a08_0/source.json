@@ -1,0 +1,26 @@
+{
+  "name": "librsvg",
+  "version": "2.62.4",
+  "build": "h5506a08_0",
+  "licence": "LGPL-2.1-or-later",
+  "condaPackage": {
+    "url": "https://conda.anaconda.org/conda-forge/win-64/librsvg-2.62.4-h5506a08_0.conda",
+    "sha256": "ba329e4bd97afd261a44933b599450bead02e519e8ec280a98aae438816fb7f9"
+  },
+  "feedstock": "https://github.com/conda-forge/librsvg-feedstock/tree/861fd4701bffbbaeb7c50dfc9be71fa0f97856f9",
+  "directory": "packages/librsvg-2.62.4-h5506a08_0",
+  "sources": [
+    {
+      "file": "source/librsvg-2.62.4.tar.xz",
+      "upstreamUrl": "https://download.gnome.org/sources/librsvg/2.62/librsvg-2.62.4.tar.xz",
+      "sha256": "c982b8157a054b803493bf994d31e50105eb948dd8da6b4ab9734e8d392712a3",
+      "patches": [
+        "add_rust_lto.patch",
+        "windows_gir.patch"
+      ]
+    }
+  ],
+  "shippedFiles": [
+    "bin/rsvg-2-2.dll"
+  ]
+}

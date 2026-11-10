@@ -1,0 +1,25 @@
+{
+  "channels": [
+    "https://conda.anaconda.org/conda-forge/"
+  ],
+  "dev_url": "https://gitlab.gnome.org/GNOME/glib/",
+  "extra": {
+    "feedstock-name": "glib",
+    "flow_run_id": "github_37638403531",
+    "recipe-maintainers": [
+      "ccordoba12",
+      "jakirkham",
+      "scopatz",
+      "ocefpaf",
+      "pkgw",
+      "isuruf",
+      "xhochy",
+      "tschoonj"
+    ],
+    "remote_url": "https://github.com/conda-forge/glib-feedstock",
+    "sha": "494a56fe1405fa8f1b555a31a4beb7df165c030c"
+  },
+  "home": "https://developer.gnome.org/glib/",
+  "license": "LGPL-2.1-or-later",
+  "summary": "Provides core application building blocks for libraries and applications written in C."
+}
