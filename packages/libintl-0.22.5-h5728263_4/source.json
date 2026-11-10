@@ -1,0 +1,32 @@
+{
+  "name": "libintl",
+  "version": "0.22.5",
+  "build": "h5728263_4",
+  "licence": "LGPL-2.1-or-later",
+  "condaPackage": {
+    "url": "https://conda.anaconda.org/conda-forge/win-64/libintl-0.22.5-h5728263_4.conda",
+    "sha256": "85b50be2209f3b8a873830ec9894477d260f4c7ba9540e65959f5812bf7219f8"
+  },
+  "feedstock": "https://github.com/conda-forge/gettext-feedstock/tree/8e011f31bdfb82ad0e67ae47a8147146db7bba2f",
+  "directory": "packages/libintl-0.22.5-h5728263_4",
+  "sources": [
+    {
+      "file": "source/gettext-0.22.5.tar.xz",
+      "upstreamUrl": "https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.5.tar.xz",
+      "sha256": "fe10c37353213d78a5b83d48af231e005c4da84db5ce88037d88355938259640",
+      "patches": [
+        "0001-Mark-v-snprintf-as-available.patch",
+        "0002-Prevent-libtool-from-worrying-about-dependent-librar.patch",
+        "0003-Fix-some-DLL-export-markings-in-libintl.patch",
+        "0004-Fix-quoting-when-invoking-windres.patch",
+        "0005-CXXLD-is-not-a-thing.patch",
+        "0006-Work-around-Unixisms-in-libgettextpo.patch",
+        "0007-Add-missing-extern-C-protectors.patch",
+        "0008-Avoid-close-inconsistencies.patch"
+      ]
+    }
+  ],
+  "shippedFiles": [
+    "site-packages/cv2/python-3/intl-8.dll"
+  ]
+}

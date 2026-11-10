@@ -1,0 +1,18 @@
+{
+  "arch": "x86_64",
+  "build": "h0c5f640_1",
+  "build_number": 1,
+  "depends": [
+    "mpg123 >=1.33.7,<1.34.0a0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "LGPL-2.0-only",
+  "license_family": "LGPL",
+  "name": "lame",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1786292530281,
+  "version": "4.0"
+}

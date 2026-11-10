@@ -1,0 +1,346 @@
+# This file created by conda-build 26.9.1
+# meta.yaml template originally from:
+# D:\a\ffmpeg-feedstock\ffmpeg-feedstock\recipe, last modified Tue Oct 20 20:24:26 2026
+# ------------------------------------------------
+
+package:
+  name: ffmpeg
+  version: 9.0.2
+source:
+  url: https://ffmpeg.org/releases/ffmpeg-9.0.2.tar.gz
+  sha256: 84960df915059e8754fef2cd7c9afeb614062b1b5458ec471eecee619ee04e98
+  patches:
+    - patches/0001-Generate-pkgconfig-for-windows.patch
+    - patches/0002-Revert-compat-Use-instead-of-for-rc.exe-options.patch
+    - patches/0003-disable-gnu-windres.patch
+    - patches/0004-Remove-private-requirements-to-help-downstream-compi.patch
+    - patches/0005-Chromium-patches-for-qtwebengine.patch
+    - patches/0006-Use-forward-lahs-on-windows.patch
+    - patches/0007-avcodec-nvenc-fix-double-free-of-the-input-buffer.patch
+build:
+  number: '5'
+  string: lgpl_hf2461e7_5
+  run_exports:
+    - ffmpeg >=9.0.2,<10.0a0
+  ignore_run_exports_from:
+    - glib
+requirements:
+  build:
+    - autotools_clang_conda 0.0.14 hb87d2c3_2
+    - bzip2 1.0.8 h0ad9c76_10
+    - ca-certificates 2026.10.19 h4c7d964_0
+    - clang 22.1.8 default_nocfg_hbb9487a_2
+    - clang-22 22.1.8 default_hac490eb_2
+    - clangxx 22.1.8 default_nocfg_hbb9487a_2
+    - cmake 4.4.4 hde52c71_0
+    - compiler-rt22 22.1.8 h49e36cd_2
+    - compiler-rt22_win-64 22.1.8 h49e36cd_2
+    - glslang 16.6.0 h8fa7867_0
+    - icu 78.3 h5112557_2
+    - krb5 1.22.2 h719d79b_2
+    - libcurl 8.23.0 hdb0ef4a_0
+    - libexpat 2.8.5 hac47afa_0
+    - libffi 3.7.0 h3d046cb_1
+    - libglib 2.90.1 ha564072_0
+    - libiconv 1.18 hc1393d2_3
+    - libintl 0.22.5 h5728263_4
+    - libllvm22 22.1.8 h830ff33_3
+    - liblzma 5.8.3 hfd05255_1
+    - libpsl 0.23.1 h9b16d47_1
+    - libssh2 1.11.1 h734d217_1
+    - libuv 1.52.1 h6a83c73_1
+    - libxml2 2.15.4 he095d88_1
+    - libxml2-16 2.15.4 h3cfd58e_1
+    - libzlib 1.3.2 hfd05255_3
+    - lld 23.1.3 he13e66b_0
+    - llvm-openmp 23.1.3 h49e36cd_1
+    - llvm-tools 22.1.8 he5be12e_3
+    - m2-autoconf 2.71.3 hc364b38_6
+    - m2-automake-wrapper 20240607.1 hc364b38_6
+    - m2-automake1.11 1.11.6.6 hc364b38_6
+    - m2-automake1.12 1.12.6.6 hc364b38_6
+    - m2-automake1.13 1.13.4.7 hc364b38_6
+    - m2-automake1.14 1.14.1.6 hc364b38_6
+    - m2-automake1.15 1.15.1.4 hc364b38_6
+    - m2-automake1.16 1.16.5.1 hc364b38_6
+    - m2-automake1.17 1.17.1 hc364b38_6
+    - m2-base 2022.06.1 hc364b38_6
+    - m2-bash 5.2.037.2 hc364b38_6
+    - m2-bash-completion 2.16.0.1 hc364b38_6
+    - m2-brotli 1.1.0.2 hc364b38_6
+    - m2-bsdtar 3.7.9.1 hc364b38_6
+    - m2-bzip2 1.0.8.4 hc364b38_6
+    - m2-ca-certificates 20241223.1 hc364b38_6
+    - m2-conda-epoch 20250515 0_x86_64
+    - m2-coreutils 8.32.5 hc364b38_6
+    - m2-curl 8.9.1.1 hc364b38_6
+    - m2-dash 0.5.12.1 hc364b38_6
+    - m2-db 6.2.32.5 hc364b38_6
+    - m2-diffutils 3.12.1 hc364b38_6
+    - m2-file 5.46.2 hc364b38_6
+    - m2-filesystem 2025.02.23.1 hc364b38_10
+    - m2-findutils 4.9.0.3 hc364b38_6
+    - m2-gawk 5.3.2.1 hc364b38_6
+    - m2-gcc-libs 13.3.0.1 hc364b38_6
+    - m2-gdbm 1.25.1 hc364b38_6
+    - m2-getent 2.18.90.5 hc364b38_6
+    - m2-gmp 6.3.0.1 hc364b38_6
+    - m2-grep 1!3.0.7 hc364b38_6
+    - m2-gzip 1.14.1 hc364b38_6
+    - m2-heimdal-libs 7.8.0.5 hc364b38_6
+    - m2-inetutils 2.5.2 hc364b38_6
+    - m2-info 7.2.1 hc364b38_6
+    - m2-less 668.1 hc364b38_6
+    - m2-libargp 20241207.1 hc364b38_6
+    - m2-libbz2 1.0.8.4 hc364b38_6
+    - m2-libcurl 8.9.1.1 hc364b38_6
+    - m2-libdb 6.2.32.5 hc364b38_6
+    - m2-libedit 20240808_3.1.1 hc364b38_6
+    - m2-libexpat 2.7.1.1 hc364b38_6
+    - m2-libffi 3.4.8.1 hc364b38_6
+    - m2-libgdbm 1.25.1 hc364b38_6
+    - m2-libgnutls 3.8.9.1 hc364b38_6
+    - m2-libhogweed 3.9.1.1 hc364b38_6
+    - m2-libiconv 1.18.1 hc364b38_6
+    - m2-libidn2 2.3.8.1 hc364b38_6
+    - m2-libintl 0.22.5.1 hc364b38_6
+    - m2-libltdl 2.5.4.1 hc364b38_6
+    - m2-liblz4 1.9.4.1 hc364b38_6
+    - m2-liblzma 5.8.1.1 hc364b38_6
+    - m2-libnettle 3.9.1.1 hc364b38_6
+    - m2-libnghttp2 1.65.0.1 hc364b38_6
+    - m2-libopenssl 3.5.0.1 hc364b38_6
+    - m2-libp11-kit 0.25.5.2 hc364b38_6
+    - m2-libpcre 8.45.5 hc364b38_6
+    - m2-libpcre2_8 10.45.1 hc364b38_6
+    - m2-libpsl 0.21.5.2 hc364b38_6
+    - m2-libreadline 8.2.013.1 hc364b38_6
+    - m2-libsqlite 3.49.1.2 hc364b38_6
+    - m2-libssh2 1.11.1.1 hc364b38_6
+    - m2-libtasn1 4.20.0.1 hc364b38_6
+    - m2-libtool 2.5.4.1 hc364b38_6
+    - m2-libunistring 1.3.1 hc364b38_6
+    - m2-libutil-linux 2.40.2.2 hc364b38_6
+    - m2-libxcrypt 4.4.38.1 hc364b38_6
+    - m2-libzstd 1.5.7.1 hc364b38_6
+    - m2-m4 1.4.19.2 hc364b38_6
+    - m2-make 4.4.1.2 hc364b38_6
+    - m2-mintty 1!3.7.8.1 hc364b38_6
+    - m2-mpfr 4.2.2.1 hc364b38_6
+    - m2-msys2-keyring 1!20250214.1 hc364b38_6
+    - m2-msys2-launcher 1.5.3 hc364b38_6
+    - m2-msys2-runtime 3.6.1.4 hc364b38_6
+    - m2-nano 8.4.1 hc364b38_6
+    - m2-ncurses 6.5.20240831.2 hc364b38_6
+    - m2-openssl 3.5.0.1 hc364b38_6
+    - m2-p11-kit 0.25.5.2 hc364b38_6
+    - m2-perl 5.38.4.2 hc364b38_6
+    - m2-rebase 4.5.0.4 hc364b38_6
+    - m2-sed 4.9.1 hc364b38_6
+    - m2-tar 1.35.2 hc364b38_6
+    - m2-time 1.9.3 hc364b38_6
+    - m2-tzcode 2025b.1 hc364b38_6
+    - m2-unzip 6.0.3 hc364b38_6
+    - m2-util-linux 2.40.2.2 hc364b38_6
+    - m2-wget 1.25.0.1 hc364b38_6
+    - m2-which 2.23.4 hc364b38_6
+    - m2-zip 3.0.4 hc364b38_6
+    - m2-zlib 1.3.1.1 hc364b38_6
+    - m2-zstd 1.5.7.1 hc364b38_6
+    - nasm 2.16.03 hfd05255_1
+    - openssl 3.6.5 hf411b9b_0
+    - pcre2 10.47 h8466c1e_1
+    - pkg-config 0.29.2 hffdb5b9_1013
+    - shaderc 2026.4 hef10606_1
+    - spirv-tools 2026.4 h49e36cd_2
+    - ucrt 10.0.26100.0 h57928b3_0
+    - vc 14.5 ha367084_41
+    - vc14_runtime 14.51.36247 habf1de7_41
+    - vcomp14 14.51.36247 habf1de7_41
+    - vs2022_win-64 19.44.35207 ha74f236_41
+    - vs_win-64 2022.14 ha74f236_41
+    - vswhere 3.1.7 h40126e0_1
+    - zstd 1.5.7 h534d264_7
+  host:
+    - aom 3.14.1 pl5321h06fc181_2
+    - bzip2 1.0.8 h0ad9c76_10
+    - ca-certificates 2026.10.19 h4c7d964_0
+    - cairo 1.18.6 h477c42c_0
+    - dav1d-devel 1.5.4 h6a83c73_4
+    - expat 2.8.5 hac47afa_0
+    - font-ttf-dejavu-sans-mono 2.37 hab24e00_0
+    - font-ttf-inconsolata 3.000 h77eed37_0
+    - font-ttf-source-code-pro 2.038 h77eed37_0
+    - font-ttf-ubuntu 0.83 h77eed37_3
+    - fontconfig 2.18.3 hd47e2ca_1
+    - fonts-conda-ecosystem 1 0
+    - fonts-conda-forge 1 hc364b38_1
+    - freetype 2.14.3 h57928b3_2
+    - fribidi 1.0.17 hfd05255_0
+    - gdk-pixbuf 2.44.8 h1f5b9c4_2
+    - glib 2.90.1 h6e26cc4_0
+    - glib-tools 2.90.1 h026f061_0
+    - graphite2 1.3.15 h5112557_1
+    - harfbuzz 14.6.0 h57928b3_2
+    - icu 78.3 h5112557_2
+    - lame 4.0 h0c5f640_1
+    - lerc 4.2.0 hd936e49_0
+    - libbrotlicommon 1.2.0 hf02afa3_4
+    - libbrotlidec 1.2.0 h84f9c24_4
+    - libbrotlienc 1.2.0 he2a975b_4
+    - libdeflate 1.25 h1a1d4e4_1
+    - libexpat 2.8.5 hac47afa_0
+    - libffi 3.7.0 h3d046cb_1
+    - libfreetype 2.14.3 h57928b3_2
+    - libfreetype6 2.14.3 hdbac1cb_2
+    - libglib 2.90.1 ha564072_0
+    - libharfbuzz 14.6.0 h03b5201_2
+    - libharfbuzz-devel 14.6.0 h03b5201_2
+    - libhwy 1.4.0 h2419aca_2
+    - libiconv 1.18 hc1393d2_3
+    - libintl 0.22.5 h5728263_4
+    - libintl-devel 0.22.5 h5728263_4
+    - libjpeg-turbo 3.2.0 hfd05255_1
+    - libjxl 0.12.0 h932607e_4
+    - liblzma 5.8.3 hfd05255_1
+    - liblzma-devel 5.8.3 hfd05255_1
+    - libmpdec 4.0.0 hfd05255_2
+    - libogg 1.3.5 h2466b09_1
+    - libopus 1.6.1 h6a83c73_1
+    - libpango 1.58.2 h02b4fad_3
+    - libpango-devel 1.58.2 h7637d1b_3
+    - libpng 1.6.59 hdc8cecf_0
+    - librsvg 2.62.4 h5506a08_0
+    - libsqlite 3.54.1 hf5d6505_100
+    - libtiff 4.7.2 h8f73337_1
+    - libusb 1.0.30 h6a83c73_0
+    - libvorbis 1.3.7 h5112557_2
+    - libvulkan-headers 1.4.357.0 h477610d_1
+    - libvulkan-loader 1.4.357.0 h477610d_2
+    - libwebp 1.6.0 h4d5522a_2
+    - libwebp-base 1.6.0 h4d5522a_1
+    - libxml2 2.15.4 he095d88_1
+    - libxml2-16 2.15.4 h3cfd58e_1
+    - libxml2-devel 2.15.4 he095d88_1
+    - libzlib 1.3.2 hfd05255_3
+    - mpg123 1.33.7 ha58212f_1
+    - openh264 2.6.0 h1eab103_2
+    - openssl 3.5.9 hf411b9b_0
+    - packaging 26.3 pyhc364b38_0
+    - pango 1.58.2 h4350c2a_3
+    - pcre2 10.47 h8466c1e_1
+    - pixman 0.46.4 h5112557_3
+    - python 3.15.0 h53f6dd8_101_cp315
+    - python_abi 3.15 9_cp315
+    - sdl2 2.32.56 h5112557_0
+    - sdl3 3.4.18 h5112557_0
+    - spirv-headers 1.4.363.0 h3ebda21_0
+    - svt-av1 4.2.0 hac47afa_1
+    - tk 8.6.13 h967ab96_4
+    - tzdata 2026c h151e31d_0
+    - ucrt 10.0.26100.0 h57928b3_0
+    - vc 14.5 ha367084_41
+    - vc14_runtime 14.51.36247 habf1de7_41
+    - vcomp14 14.51.36247 habf1de7_41
+    - zlib 1.3.2 hfd05255_3
+    - zstd 1.5.7 h534d264_7
+  run_constrained: []
+  run:
+    - aom >=3.14.1,<3.15.0a0
+    - bzip2 >=1.0.8,<2.0a0
+    - fontconfig >=2.18.3,<3.0a0
+    - fonts-conda-ecosystem
+    - lame >=4.0,<4.1.0a0
+    - libdav1d >=1.5.4
+    - libdav1d7 >=1.5.4
+    - libexpat >=2.8.5,<3.0a0
+    - libfreetype >=2.14.3
+    - libfreetype6 >=2.14.3
+    - libharfbuzz >=14.6.0
+    - libiconv >=1.18,<2.0a0
+    - libjxl >=0.12.0,<0.13.0a0
+    - liblzma >=5.8.3,<6.0a0
+    - libopus >=1.6.1,<2.0a0
+    - librsvg >=2.62.4,<3.0a0
+    - libvorbis >=1.3.7,<1.4.0a0
+    - libvulkan-loader >=1.4.357.0,<2.0a0
+    - libwebp-base >=1.6.0,<2.0a0
+    - libxml2
+    - libxml2-16 >=2.15.4
+    - libzlib >=1.3.2,<2.0a0
+    - openh264 >=2.6.0,<2.6.1.0a0
+    - openssl >=3.5.9,<4.0a0
+    - sdl2 >=2.32.56,<3.0a0
+    - svt-av1 >=4.2.0,<4.2.1.0a0
+    - ucrt >=10.0.20348.0
+    - vc >=14.3,<15
+    - vc14_runtime >=14.44.35208
+test:
+  requires: null
+  commands:
+    - ffmpeg --help
+    - ffmpeg -hide_banner -codecs
+    - ffmpeg -hide_banner -protocols
+    - ffmpeg -hide_banner -protocols | findstr "https"
+    - ffmpeg -hide_banner -codecs | findstr "DEVI.S\ zlib"
+    - ffmpeg -hide_banner -codecs | findstr "DEV.LS h264"
+    - ffmpeg -hide_banner -codecs | findstr "libopenh264"
+    - ffmpeg -hide_banner -codecs | findstr "libaom"
+    - ffmpeg -hide_banner -codecs | findstr "libsvtav1"
+    - ffplay -version
+    - if not exist %PREFIX%\\Library\\lib\\avdevice.lib exit 1
+    - if not exist %PREFIX%\\Library\\lib\\swresample.lib exit 1
+    - if not exist %PREFIX%\\Library\\lib\\avfilter.lib exit 1
+    - if not exist %PREFIX%\\Library\\lib\\avcodec.lib exit 1
+    - if not exist %PREFIX%\\Library\\lib\\avformat.lib exit 1
+    - if not exist %PREFIX%\\Library\\lib\\swscale.lib exit 1
+    - if not exist %PREFIX%\\Library\\lib\\avutil.lib exit 1
+    - echo "Checking for existance of avutil-61.dll"
+    - if not exist %PREFIX%\\Library\\bin\\avutil-61.dll exit 1
+    - echo "Checking for existance of avcodec-63.dll"
+    - if not exist %PREFIX%\\Library\\bin\\avcodec-63.dll exit 1
+    - echo "Checking for existance of avformat-63.dll"
+    - if not exist %PREFIX%\\Library\\bin\\avformat-63.dll exit 1
+    - echo "Checking for existance of avdevice-63.dll"
+    - if not exist %PREFIX%\\Library\\bin\\avdevice-63.dll exit 1
+    - echo "Checking for existance of swresample-7.dll"
+    - if not exist %PREFIX%\\Library\\bin\\swresample-7.dll exit 1
+    - echo "Checking for existance of avfilter-12.dll"
+    - if not exist %PREFIX%\\Library\\bin\\avfilter-12.dll exit 1
+    - echo "Checking for existance of swscale-10.dll"
+    - if not exist %PREFIX%\\Library\\bin\\swscale-10.dll exit 1
+    - ffmpeg -hide_banner -buildconf | findstr "disable-gpl"
+    - ffmpeg -hide_banner -f lavfi -i nullsrc=s=256x256:d=8 -vcodec libopenh264 -f
+      null -
+    - ffmpeg -hide_banner -codecs | findstr "libvorbis"
+    - ffmpeg -hide_banner -codecs | findstr "libjxl"
+    - ffmpeg -hide_banner -codecs | findstr "libwebp"
+    - ffmpeg -hide_banner -filters | findstr "vulkan"
+about:
+  home: https://www.ffmpeg.org/
+  license: LGPL-2.1-or-later
+  license_file:
+    - COPYING.LGPLv2.1
+    - COPYING.LGPLv3
+  license_family: LGPL
+  summary: Cross-platform solution to record, convert and stream audio and video.
+  dev_url: https://git.ffmpeg.org/ffmpeg.git
+  doc_url: https://ffmpeg.org/documentation.html
+extra:
+  recipe-maintainers:
+    - 183amir
+    - benjaminrwilson
+    - carlodri
+    - danielballan
+    - h-vetinari
+    - hmaarrfk
+    - jakirkham
+    - matthiasdiener
+    - ocefpaf
+    - patricksnape
+    - sdvillal
+  final: true
+  copy_test_source_files: true
+  flow_run_id: github_39491674634
+  remote_url: https://github.com/conda-forge/ffmpeg-feedstock
+  sha: 86baa8908502ede48ee12292d211ecf77b8924f0

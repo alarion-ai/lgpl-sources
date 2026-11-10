@@ -1,0 +1,14 @@
+{
+  "arch": "x86_64",
+  "build": "h5728263_4",
+  "build_number": 4,
+  "depends": [
+    "libiconv >=1.18,<2.0a0"
+  ],
+  "license": "LGPL-2.1-or-later",
+  "name": "libintl",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1787841116808,
+  "version": "0.22.5"
+}

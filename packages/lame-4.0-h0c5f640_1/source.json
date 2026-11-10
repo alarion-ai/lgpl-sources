@@ -1,0 +1,29 @@
+{
+  "name": "lame",
+  "version": "4.0",
+  "build": "h0c5f640_1",
+  "licence": "LGPL-2.0-only",
+  "condaPackage": {
+    "url": "https://conda.anaconda.org/conda-forge/win-64/lame-4.0-h0c5f640_1.conda",
+    "sha256": "c1df9067381c938f819639a3c1b151a28bd1880c044951b5e14785a89fd91cf5"
+  },
+  "feedstock": "https://github.com/conda-forge/lame-feedstock/tree/99f0db95ef708de39d246a738195c6722b981621",
+  "directory": "packages/lame-4.0-h0c5f640_1",
+  "sources": [
+    {
+      "file": "source/lame-4.0.tar.gz",
+      "upstreamUrl": "https://downloads.sourceforge.net/sourceforge/lame/lame-4.0.tar.gz",
+      "sha256": "3df5124d5ad3a98312ffd7ba6a9b36230e4f8a3e66d3ce0f425e336c32d216eb",
+      "patches": [
+        "fix_id3tag_ucs2_decls.patch",
+        "fix_id3tag_utf8_casts.patch",
+        "fix_id3v2tag_utf8_frontend.patch",
+        "fix_missing_locale_include.patch",
+        "fixup_windows_build.patch"
+      ]
+    }
+  ],
+  "shippedFiles": [
+    "site-packages/cv2/python-3/libmp3lame.dll"
+  ]
+}

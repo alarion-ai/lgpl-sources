@@ -1,0 +1,146 @@
+# This file created by conda-build 26.7.1
+# meta.yaml template originally from:
+# D:\a\cairo-feedstock\cairo-feedstock\recipe, last modified Tue Sep 22 02:45:29 2026
+# ------------------------------------------------
+
+package:
+  name: cairo
+  version: 1.18.6
+source:
+  url: http://cairographics.org/releases/cairo-1.18.6.tar.xz
+  sha256: 1c767308174337a74694da0f3ec069c271452163a1ef4540964c50c301f157d4
+  patches:
+    - meson-darwin-versions.patch
+    - windows-soversion-continuity.patch
+build:
+  number: '0'
+  run_exports:
+    - cairo >=1.18.6,<2.0a0
+  string: h477c42c_0
+requirements:
+  build:
+    - bzip2 1.0.8 h0ad9c76_10
+    - ca-certificates 2026.7.22 h4c7d964_0
+    - libexpat 2.8.1 hac47afa_1
+    - libffi 3.7.0 h3d046cb_1
+    - libglib 2.90.0 ha564072_0
+    - libiconv 1.18 hc1393d2_3
+    - libintl 0.22.5 h5728263_4
+    - liblzma 5.8.3 hfd05255_1
+    - libmpdec 4.0.0 hfd05255_2
+    - libpython 3.14.7 h4f90d01_106_cp314
+    - libsqlite 3.53.4 hf5d6505_1
+    - libzlib 1.3.2 hfd05255_3
+    - meson 1.12.0 pyhcf101f3_0
+    - ninja 1.13.2 h477610d_1
+    - openssl 3.6.4 hf411b9b_0
+    - pcre2 10.47 h8466c1e_1
+    - pkg-config 0.29.2 hffdb5b9_1013
+    - python 3.14.7 h53f6dd8_106_cp314
+    - python_abi 3.14 9_cp314
+    - tk 8.6.13 h967ab96_4
+    - tzdata 2026c h151e31d_0
+    - ucrt 10.0.26100.0 h57928b3_0
+    - vc 14.5 ha367084_41
+    - vc14_runtime 14.51.36247 habf1de7_41
+    - vcomp14 14.51.36247 habf1de7_41
+    - vs2022_win-64 19.44.35207 ha74f236_41
+    - vs_win-64 2022.14 ha74f236_41
+    - vswhere 3.1.7 h40126e0_1
+    - xz-tools 5.8.3 hfd05255_1
+    - zstd 1.5.7 h534d264_7
+  host:
+    - bzip2 1.0.8 h0ad9c76_10
+    - ca-certificates 2026.7.22 h4c7d964_0
+    - expat 2.8.1 hac47afa_1
+    - fontconfig 2.18.3 hd47e2ca_1
+    - freetype 2.14.3 h57928b3_2
+    - glib 2.90.0 h6d70850_0
+    - glib-tools 2.90.0 hafa6b35_0
+    - icu 78.3 h5112557_2
+    - libexpat 2.8.1 hac47afa_1
+    - libffi 3.7.0 h3d046cb_1
+    - libfreetype 2.14.3 h57928b3_2
+    - libfreetype6 2.14.3 hdbac1cb_2
+    - libglib 2.90.0 ha564072_0
+    - libiconv 1.18 hc1393d2_3
+    - libintl 0.22.5 h5728263_4
+    - libintl-devel 0.22.5 h5728263_4
+    - liblzma 5.8.3 hfd05255_1
+    - libmpdec 4.0.0 hfd05255_2
+    - libpng 1.6.58 hdc8cecf_1
+    - libpython 3.14.7 h4f90d01_106_cp314
+    - libsqlite 3.53.4 hf5d6505_1
+    - libzlib 1.3.2 hfd05255_3
+    - openssl 3.6.4 hf411b9b_0
+    - packaging 26.3 pyhc364b38_0
+    - pcre2 10.47 h8466c1e_1
+    - pixman 0.46.4 h5112557_3
+    - python 3.14.7 h53f6dd8_106_cp314
+    - python_abi 3.14 9_cp314
+    - tk 8.6.13 h967ab96_4
+    - tzdata 2026c h151e31d_0
+    - ucrt 10.0.26100.0 h57928b3_0
+    - vc 14.5 ha367084_41
+    - vc14_runtime 14.51.36247 habf1de7_41
+    - vcomp14 14.51.36247 habf1de7_41
+    - zlib 1.3.2 hfd05255_3
+    - zstd 1.5.7 h534d264_7
+  run:
+    - fontconfig >=2.18.3,<3.0a0
+    - fonts-conda-ecosystem
+    - icu >=78.3,<79.0a0
+    - libexpat >=2.8.1,<3.0a0
+    - libfreetype >=2.14.3
+    - libfreetype6 >=2.14.3
+    - libglib >=2.90.0,<3.0a0
+    - libpng >=1.6.58,<1.7.0a0
+    - libzlib >=1.3.2,<2.0a0
+    - pixman >=0.46.4,<1.0a0
+    - ucrt >=10.0.20348.0
+    - vc >=14.3,<15
+    - vc14_runtime >=14.44.35208
+test:
+  requires:
+    - expat
+    - freetype
+    - glib
+    - pkg-config
+    - zlib
+  commands:
+    - if not exist %LIBRARY_BIN%\cairo.dll exit /b 1
+    - if not exist %LIBRARY_LIB%\cairo.lib exit /b 1
+    - if not exist %LIBRARY_LIB%\cairo-static.lib exit /b 1
+    - if not exist %LIBRARY_BIN%\cairo-gobject.dll exit /b 1
+    - if not exist %LIBRARY_LIB%\cairo-gobject.lib exit /b 1
+    - if not exist %LIBRARY_LIB%\cairo-gobject-static.lib exit /b 1
+    - if not exist %LIBRARY_BIN%\cairo-script-interpreter.dll exit /b 1
+    - if not exist %LIBRARY_LIB%\cairo-script-interpreter.lib exit /b 1
+    - if not exist %LIBRARY_LIB%\cairo-script-interpreter-static.lib exit /b 1
+    - if not exist %LIBRARY_LIB%\pkgconfig\cairo-win32.pc exit /b 1
+    - if not exist %LIBRARY_INC%\cairo\cairo.h exit /b 1
+    - set "PKG_CONFIG_PATH=%LIBRARY_LIB%\pkgconfig"
+    - pkg-config --cflags cairo
+    - pkg-config --cflags cairo-fc
+    - pkg-config --cflags cairo-gobject
+about:
+  home: http://cairographics.org/
+  dev_url: https://gitlab.freedesktop.org/cairo/cairo
+  doc_url: https://www.cairographics.org/documentation/
+  license: LGPL-2.1-only or MPL-1.1
+  license_file:
+    - COPYING
+    - COPYING-LGPL-2.1
+    - COPYING-MPL-1.1
+  summary: Cairo is a 2D graphics library with support for multiple output devices.
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - ocefpaf
+    - pkgw
+    - tschoonj
+  final: true
+  copy_test_source_files: true
+  flow_run_id: github_35680617868
+  remote_url: https://github.com/conda-forge/cairo-feedstock
+  sha: 8b534c45e4a7945ac29aa8bd177109af1c318594
