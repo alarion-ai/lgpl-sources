@@ -10,6 +10,11 @@ every LGPL component we ship freely available, with no sign-in required.
   its LGPL components and an `index.json` with each component's exact conda-forge build, the
   feedstock commit it was built from, its upstream source archive (with sha256) and the files it
   contributes to the pack.
+- `app/<component>/<version>/` — LGPL libraries that ship inside the application itself rather than in
+  a pack (today: the libvips bundle behind the app's image handling, tag `sharp-libvips-<version>`): a
+  `README.md`, an `index.json` (exact versions, sha256s, how each archive was checked against its
+  upstream's published checksum), `source/` (upstream source archives) and `recipe/` (the build
+  scripts and patches that produce the shipped binary).
 - `packages/<name>-<version>-<build>/` — one directory per exact conda-forge build:
   - `source/` — the upstream source archive that build used, checksum-verified
   - `recipe/` — the complete conda-forge recipe for that build: build scripts, patches and
