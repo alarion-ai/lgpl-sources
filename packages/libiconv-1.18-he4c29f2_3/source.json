@@ -20,6 +20,6 @@
     }
   ],
   "shippedFiles": [
-    "lib/python3.11/site-packages/cv2/.dylibs/libiconv.2.dylib"
+    "site-packages/cv2/.dylibs/libiconv.2.dylib"
   ]
 }
