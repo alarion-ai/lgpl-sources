@@ -26,14 +26,12 @@
     }
   ],
   "shippedFiles": [
-    "bin/avcodec-63.dll",
-    "bin/avdevice-63.dll",
-    "bin/avfilter-12.dll",
-    "bin/avformat-63.dll",
-    "bin/avutil-61.dll",
-    "bin/ffmpeg.exe",
-    "bin/ffprobe.exe",
-    "bin/swresample-7.dll",
-    "bin/swscale-10.dll"
+    "Lib/site-packages/cv2/python-3/avcodec-63.dll",
+    "Lib/site-packages/cv2/python-3/avdevice-63.dll",
+    "Lib/site-packages/cv2/python-3/avfilter-12.dll",
+    "Lib/site-packages/cv2/python-3/avformat-63.dll",
+    "Lib/site-packages/cv2/python-3/avutil-61.dll",
+    "Lib/site-packages/cv2/python-3/swresample-7.dll",
+    "Lib/site-packages/cv2/python-3/swscale-10.dll"
   ]
 }

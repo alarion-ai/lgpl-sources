@@ -21,6 +21,6 @@
     }
   ],
   "shippedFiles": [
-    "bin/rsvg-2-2.dll"
+    "Lib/site-packages/cv2/python-3/rsvg-2-2.dll"
   ]
 }

@@ -18,9 +18,9 @@
     }
   ],
   "shippedFiles": [
-    "bin/pango-1.0-0.dll",
-    "bin/pangocairo-1.0-0.dll",
-    "bin/pangoft2-1.0-0.dll",
-    "bin/pangowin32-1.0-0.dll"
+    "Lib/site-packages/cv2/python-3/pango-1.0-0.dll",
+    "Lib/site-packages/cv2/python-3/pangocairo-1.0-0.dll",
+    "Lib/site-packages/cv2/python-3/pangoft2-1.0-0.dll",
+    "Lib/site-packages/cv2/python-3/pangowin32-1.0-0.dll"
   ]
 }

@@ -21,6 +21,6 @@
     }
   ],
   "shippedFiles": [
-    "bin/cairo.dll"
+    "Lib/site-packages/cv2/python-3/cairo.dll"
   ]
 }

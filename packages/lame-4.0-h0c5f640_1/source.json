@@ -24,6 +24,6 @@
     }
   ],
   "shippedFiles": [
-    "bin/libmp3lame.dll"
+    "Lib/site-packages/cv2/python-3/libmp3lame.dll"
   ]
 }

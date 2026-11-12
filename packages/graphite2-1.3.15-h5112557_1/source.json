@@ -22,6 +22,6 @@
     }
   ],
   "shippedFiles": [
-    "bin/graphite2.dll"
+    "Lib/site-packages/cv2/python-3/graphite2.dll"
   ]
 }

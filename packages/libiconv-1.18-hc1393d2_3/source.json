@@ -22,7 +22,7 @@
     }
   ],
   "shippedFiles": [
-    "bin/charset.dll",
-    "bin/iconv.dll"
+    "Lib/site-packages/cv2/python-3/charset.dll",
+    "Lib/site-packages/cv2/python-3/iconv.dll"
   ]
 }

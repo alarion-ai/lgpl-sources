@@ -27,6 +27,6 @@
     }
   ],
   "shippedFiles": [
-    "bin/intl-8.dll"
+    "Lib/site-packages/cv2/python-3/intl-8.dll"
   ]
 }

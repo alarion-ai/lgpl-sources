@@ -18,6 +18,6 @@
     }
   ],
   "shippedFiles": [
-    "bin/gdk_pixbuf-2.0-0.dll"
+    "Lib/site-packages/cv2/python-3/gdk_pixbuf-2.0-0.dll"
   ]
 }
