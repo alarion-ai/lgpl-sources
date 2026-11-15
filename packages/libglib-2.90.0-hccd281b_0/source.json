@@ -21,9 +21,9 @@
     }
   ],
   "shippedFiles": [
-    "site-packages/cv2/.dylibs/libgio-2.0.0.dylib",
-    "site-packages/cv2/.dylibs/libglib-2.0.0.dylib",
-    "site-packages/cv2/.dylibs/libgmodule-2.0.0.dylib",
-    "site-packages/cv2/.dylibs/libgobject-2.0.0.dylib"
+    "lib/python3.11/site-packages/cv2/.dylibs/libgio-2.0.0.dylib",
+    "lib/python3.11/site-packages/cv2/.dylibs/libglib-2.0.0.dylib",
+    "lib/python3.11/site-packages/cv2/.dylibs/libgmodule-2.0.0.dylib",
+    "lib/python3.11/site-packages/cv2/.dylibs/libgobject-2.0.0.dylib"
   ]
 }

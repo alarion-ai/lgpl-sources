@@ -20,6 +20,6 @@
     }
   ],
   "shippedFiles": [
-    "site-packages/cv2/.dylibs/libintl.8.dylib"
+    "lib/python3.11/site-packages/cv2/.dylibs/libintl.8.dylib"
   ]
 }
