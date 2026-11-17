@@ -1,8 +1,9 @@
 # Alarion LGPL corresponding source
 
-Alarion's macOS app installs optional components ("packs") that include libraries licensed under
-the GNU Lesser General Public License (LGPL). This repository makes the corresponding source of
-every LGPL component we ship freely available, with no sign-in required.
+Alarion's macOS app ships libraries licensed under the GNU Lesser General Public License (LGPL),
+both inside the app itself and in the optional components ("packs") it installs. This repository
+makes the corresponding source of every LGPL component we ship freely available, with no sign-in
+required.
 
 ## Layout
 
@@ -26,13 +27,24 @@ always resolves to exactly what that version contained.
 
 ## Rebuilding
 
-These components are unmodified conda-forge builds. To rebuild one, use its recipe with
-conda-forge's tooling (`conda-build` for `meta.yaml`, `rattler-build` for `recipe.yaml`), or
-extract `source/`, apply the patches the recipe lists, and follow its `build.sh`. You may replace
-an LGPL library in an installed Alarion pack with your own modified build of it.
+- **Pack components** (`packs/`, `packages/`) are unmodified conda-forge builds. To rebuild one,
+  use its recipe with conda-forge's tooling (`conda-build` for `meta.yaml`, `rattler-build` for
+  `recipe.yaml`), or extract `source/`, apply the patches the recipe lists, and follow its
+  `build.sh`. You may replace an LGPL library in an installed Alarion pack with your own modified
+  build of it.
+- **App components** (`app/`) are not conda-forge builds. Each one's `README.md` gives its own
+  build recipe and the steps to run Alarion with your own build of the library, including
+  re-signing the app.
 
 ## How this is generated
 
-`scripts/packs/lgpl-sources.sh` in Alarion's build tooling reads a published pack, matches every
-binary in it to the conda-forge build that produced it by Mach-O UUID, and collects the source and
-recipe of each LGPL one. Questions: open an issue in this repository.
+Alarion's build tooling generates this repository:
+
+- `scripts/packs/lgpl-sources.sh` reads a published pack, matches every binary in it to the
+  conda-forge build that produced it by Mach-O UUID, and collects the source and recipe of each
+  LGPL one.
+- `scripts/packs/lgpl-sources-libvips.mjs` publishes `app/sharp-libvips/`. It checks the libvips
+  bundle the app ships against the app's lockfile and against the sharp-libvips build recipe, and
+  checks each source archive against its upstream's published checksum.
+
+Questions: open an issue in this repository.
