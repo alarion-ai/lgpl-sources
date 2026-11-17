@@ -18,6 +18,6 @@
     }
   ],
   "shippedFiles": [
-    "lib/python3.11/site-packages/cv2/.dylibs/libfribidi.0.dylib"
+    "site-packages/cv2/.dylibs/libfribidi.0.dylib"
   ]
 }
