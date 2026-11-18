@@ -18,8 +18,5 @@
         "add_rust_lto.patch"
       ]
     }
-  ],
-  "shippedFiles": [
-    "site-packages/cv2/.dylibs/librsvg-2.2.dylib"
   ]
 }

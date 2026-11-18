@@ -23,16 +23,5 @@
         "patches/0007-avcodec-nvenc-fix-double-free-of-the-input-buffer.patch"
       ]
     }
-  ],
-  "shippedFiles": [
-    "bin/ffmpeg",
-    "bin/ffprobe",
-    "lib/libavcodec.63.1.101.dylib",
-    "lib/libavdevice.63.1.101.dylib",
-    "lib/libavfilter.12.1.101.dylib",
-    "lib/libavformat.63.1.101.dylib",
-    "lib/libavutil.61.1.101.dylib",
-    "lib/libswresample.7.1.101.dylib",
-    "lib/libswscale.10.1.101.dylib"
   ]
 }

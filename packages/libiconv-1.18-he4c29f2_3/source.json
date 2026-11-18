@@ -18,8 +18,5 @@
         "utf_8_mac.patch"
       ]
     }
-  ],
-  "shippedFiles": [
-    "site-packages/cv2/.dylibs/libiconv.2.dylib"
   ]
 }

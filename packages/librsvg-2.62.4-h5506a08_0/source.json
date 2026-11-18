@@ -19,8 +19,5 @@
         "windows_gir.patch"
       ]
     }
-  ],
-  "shippedFiles": [
-    "bin/rsvg-2-2.dll"
   ]
 }

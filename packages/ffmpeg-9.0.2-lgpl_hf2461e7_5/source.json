@@ -24,16 +24,5 @@
         "patches/0007-avcodec-nvenc-fix-double-free-of-the-input-buffer.patch"
       ]
     }
-  ],
-  "shippedFiles": [
-    "bin/avcodec-63.dll",
-    "bin/avdevice-63.dll",
-    "bin/avfilter-12.dll",
-    "bin/avformat-63.dll",
-    "bin/avutil-61.dll",
-    "bin/ffmpeg.exe",
-    "bin/ffprobe.exe",
-    "bin/swresample-7.dll",
-    "bin/swscale-10.dll"
   ]
 }

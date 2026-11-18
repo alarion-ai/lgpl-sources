@@ -16,8 +16,5 @@
       "sha256": "6949dcde27d41cebad1fd741fcafc36d55a1020d2d872d4a6eb3914caabbada2",
       "patches": []
     }
-  ],
-  "shippedFiles": [
-    "site-packages/cv2/.dylibs/libfribidi.0.dylib"
   ]
 }
