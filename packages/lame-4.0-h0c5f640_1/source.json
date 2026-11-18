@@ -22,8 +22,5 @@
         "fixup_windows_build.patch"
       ]
     }
-  ],
-  "shippedFiles": [
-    "bin/libmp3lame.dll"
   ]
 }

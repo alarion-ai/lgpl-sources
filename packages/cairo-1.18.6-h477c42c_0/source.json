@@ -19,8 +19,5 @@
         "windows-soversion-continuity.patch"
       ]
     }
-  ],
-  "shippedFiles": [
-    "bin/cairo.dll"
   ]
 }

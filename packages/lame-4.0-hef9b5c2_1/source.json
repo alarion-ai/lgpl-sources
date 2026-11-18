@@ -22,8 +22,5 @@
         "fixup_windows_build.patch"
       ]
     }
-  ],
-  "shippedFiles": [
-    "site-packages/cv2/.dylibs/libmp3lame.0.dylib"
   ]
 }

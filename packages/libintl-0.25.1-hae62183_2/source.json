@@ -18,8 +18,5 @@
         "0009-string-h-dont-redeclare-macro-functions.patch"
       ]
     }
-  ],
-  "shippedFiles": [
-    "site-packages/cv2/.dylibs/libintl.8.dylib"
   ]
 }

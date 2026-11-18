@@ -18,8 +18,5 @@
         "meson-darwin-versions.patch"
       ]
     }
-  ],
-  "shippedFiles": [
-    "site-packages/cv2/.dylibs/libcairo.2.dylib"
   ]
 }

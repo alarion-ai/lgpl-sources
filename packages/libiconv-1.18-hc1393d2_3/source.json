@@ -20,9 +20,5 @@
         "configure.cmake.patch"
       ]
     }
-  ],
-  "shippedFiles": [
-    "bin/charset.dll",
-    "bin/iconv.dll"
   ]
 }

@@ -16,8 +16,5 @@
       "sha256": "d05fdf90bea2f629eaa2d115e909fd356388ac639e54f77b87a018a6d76224bd",
       "patches": []
     }
-  ],
-  "shippedFiles": [
-    "site-packages/cv2/.dylibs/libplacebo.360.dylib"
   ]
 }

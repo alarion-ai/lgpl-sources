@@ -16,10 +16,5 @@
       "sha256": "342385b6ca3b7c73455d7c80a13b7dbe4489e00bc3bd4c5bd6ed4dce421e374a",
       "patches": []
     }
-  ],
-  "shippedFiles": [
-    "lib/libpango-1.0.0.dylib",
-    "lib/libpangocairo-1.0.0.dylib",
-    "lib/libpangoft2-1.0.0.dylib"
   ]
 }
