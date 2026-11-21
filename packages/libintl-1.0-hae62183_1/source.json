@@ -1,0 +1,20 @@
+{
+  "name": "libintl",
+  "version": "1.0",
+  "build": "hae62183_1",
+  "licence": "LGPL-2.1-or-later",
+  "condaPackage": {
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libintl-1.0-hae62183_1.conda",
+    "sha256": "50cd23514846dd057c5d3d4f38e29a7948909e51b3b53b99fe4b8a541971edb0"
+  },
+  "feedstock": "https://github.com/conda-forge/gettext-feedstock/tree/cd383d0559a3c3e484b1e49eea2a44142743978a",
+  "directory": "packages/libintl-1.0-hae62183_1",
+  "sources": [
+    {
+      "file": "source/gettext-1.0.tar.xz",
+      "upstreamUrl": "https://ftp.gnu.org/pub/gnu/gettext/gettext-1.0.tar.xz",
+      "sha256": "71132a3fb71e68245b8f2ac4e9e97137d3e5c02f415636eb508ae607bc01add7",
+      "patches": []
+    }
+  ]
+}
