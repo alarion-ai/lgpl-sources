@@ -1,0 +1,20 @@
+{
+  "channels": [
+    "https://conda.anaconda.org/conda-forge/"
+  ],
+  "extra": {
+    "flow_run_id": "github_44221766730",
+    "recipe-maintainers": [
+      "notestaff",
+      "pkgw",
+      "tschoonj",
+      "xhochy",
+      "jschueller"
+    ],
+    "remote_url": "https://github.com/conda-forge/gdk-pixbuf-feedstock",
+    "sha": "906e645cded0d556003580d3e60766af26c21125"
+  },
+  "home": "https://developer.gnome.org/gdk-pixbuf/",
+  "license": "LGPL-2.1-or-later",
+  "summary": "GdkPixbuf is a library for image loading and manipulation."
+}
