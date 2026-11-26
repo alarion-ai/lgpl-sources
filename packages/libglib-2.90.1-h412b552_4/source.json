@@ -1,0 +1,23 @@
+{
+  "name": "libglib",
+  "version": "2.90.1",
+  "build": "h412b552_4",
+  "licence": "LGPL-2.1-or-later",
+  "condaPackage": {
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libglib-2.90.1-h412b552_4.conda",
+    "sha256": "92afacc4a9645850fcc4498bbb937d1645b1839fbd86568fb7b9360b0b8981ec"
+  },
+  "feedstock": "https://github.com/conda-forge/glib-feedstock/tree/d4e7e33d13eefc3b81b40c4d38b5a533ddeba09d",
+  "directory": "packages/libglib-2.90.1-h412b552_4",
+  "sources": [
+    {
+      "file": "source/glib-2.90.1.tar.xz",
+      "upstreamUrl": "https://download.gnome.org/sources/glib/2.90/glib-2.90.1.tar.xz",
+      "sha256": "93c941aa17d5eb1d53fe838365f29a8b4e539c222a256d974ec8f30fc413e396",
+      "patches": [
+        "patches/0001-Remove-hard-coded-paths.patch",
+        "patches/0002-crossplatform-test-tweaks.patch"
+      ]
+    }
+  ]
+}
