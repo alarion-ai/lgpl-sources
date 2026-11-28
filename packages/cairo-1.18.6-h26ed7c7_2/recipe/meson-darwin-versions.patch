@@ -1,0 +1,17 @@
+diff --git a/meson.build b/meson.build
+index 600cdf9..19f1633 100644
+--- a/meson.build
++++ b/meson.build
+@@ -38,7 +38,11 @@ endif
+ # Use a stable compatibility version for Darwin dylibs so cairo is suitable for distribution as a
+ # system library.  The compatibility version is pinned at 1.0 while the current version tracks the
+ # release, keeping clients from needing to relink on every release.
+-cairo_darwin_versions = ['1.0', '@0@.@1@.@2@'.format(cairo_version_major, cairo_version_minor, cairo_version_micro)]
++#
++# conda-forge: maintain versioning compatibility with the previous
++# Autotools-based binaries. The `cairo_version` integer follows the
++# same scheme as the previous Autotools system.
++cairo_darwin_versions = ['11603.0.0', '@0@.0.0'.format(cairo_version)]
+ 
+ conf = configuration_data()
+ 
