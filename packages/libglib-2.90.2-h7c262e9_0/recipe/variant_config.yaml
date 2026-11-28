@@ -1,0 +1,13 @@
+build_platform: win-64
+c_compiler: vs
+c_compiler_version: '2022'
+c_stdlib: vs
+channel_targets: conda-forge main
+cxx_compiler: vs
+cxx_compiler_version: '2022'
+libffi: '3.7'
+libiconv: '1'
+libintl_devel: '0.22'
+pcre2: '10.49'
+target_platform: win-64
+zlib: '1'
